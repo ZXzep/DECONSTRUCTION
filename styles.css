@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+.container{
+    width: 100%;
+}
+.page1{
+    /* background-image: ; */
+    border: 1px solid red;
+    background-image: url("./asset/Section3/desk_BG.png")
+}
+.page2{
+    
+}
+.page3{
+
+}
