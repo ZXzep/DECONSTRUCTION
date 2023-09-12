@@ -10,6 +10,7 @@
     background-image: url("./asset/Section3/desk_BG.png");
     background-size: contain;
     height: 2534px;
+    display: flex;
 }
 .page1-img{
     position: relative;
