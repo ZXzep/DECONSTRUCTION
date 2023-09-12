@@ -3,8 +3,9 @@
 }
 .container{
     width: 100%;
+    height: 100vh;
     border: 1px solid red;
-    height: 1080px;
+    position: fixed;
 }
 .page1{
     background-image: url("./asset/Section3/desk_BG.png");
@@ -38,23 +39,26 @@
 }
 .checklist{
     border: 2px solid blue;
+    scale: 75%;
+    
 }
 .checklist-content-background{
     margin: 0;
     box-sizing: border-box;
-    padding: 190px 50px 50px 50px;
+    padding: 80px 50px 50px 50px;
     position: relative;
-    width: 590px;
-    height: 900px;
-    background-image: url("./asset/Section3/checklist_clipboard.png");
-    background-size: contain;
+    
 }
 .checklist-content{
     border: 2px solid red;
-    height: 100%;
+    /* height: 100%; */
+    width: 520px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 200px auto;
+    grid-template-rows: 50px 200px 1fr;
+    position: absolute;
+    top: calc(50% - 230px);
+    left: calc(50% - 260px);
 }
 .content-child{
     border: 2px solid black;
@@ -68,8 +72,14 @@
 } */
 .content-img{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    padding:0rem 0rem 0rem 0rem;
+}
+.text-img{
+    margin: 2rem;
+    position: absolute;
+    justify-content: left;
 }
 .checkbox{
     display: flex;
