@@ -4,13 +4,39 @@
 .container{
     width: 100%;
     height: 100vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: fixed;
+    
 }
 .page1{
     background-image: url("./asset/Section3/desk_BG.png");
-    background-size: cover;
-    height: 500px;
+    background-size: contain;
+    height: 2534px;
+    display: flex;
+}
+.page1-img{
+    position: relative;
+}
+#page1-img-1{
+    width: 345px;
+    height: 806px;
+    transform: rotate(53.46deg);
+    /* transform: scale(0.8); */
+    left: 350px;
+}
+#page1-img-2{
+    width: 676px;
+    height: 761px;
+    /* transform: scale(0.8); */
+    left: 450px;
+    top: 460px;
+}
+#page1-img-3{
+    width: 653px;
+    height: 815px;
+    transform: scale(0.8);
+    left: 200px;
+    top: 520px;
 }
 .page2{
     background-image: url("./asset/Section3/checklist_BG.png");
@@ -19,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 .page3{
@@ -38,8 +65,8 @@
     padding-bottom: 50px;
 }
 .checklist{
-    border: 2px solid blue;
-    scale: 75%;
+    /* border: 2px solid blue; */
+    scale: 68%;
     
 }
 .checklist-content-background{
@@ -50,21 +77,31 @@
     
 }
 .checklist-content{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* height: 100%; */
-    width: 520px;
+    width: 546px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 200px 1fr;
     position: absolute;
-    top: calc(50% - 230px);
-    left: calc(50% - 260px);
+    top: calc(50% - 224px);
+    left: calc(50% - 273px);
 }
 .content-child{
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .content-head{
-
+    position: absolute;
+}
+.content-head-text{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    display: flex;
+    margin-top: 12px;
+    margin-left: 10px;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
 }
 /* .content-form{
     display: grid;
@@ -77,21 +114,25 @@
     padding:0rem 0rem 0rem 0rem;
 }
 .text-img{
-    margin: 2rem;
+    margin-left: 3rem;
+    top:46%;
+    font-family: 'K2D', sans-serif;
+    font-size: 14px;
+    font-style: italic;
     position: absolute;
-    justify-content: left;
 }
 .checkbox{
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    
 }
 .label{
     box-sizing: border-box;
     padding: 20px;
 }
 .box{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     height: 20px;
     width: 20px;
 }
@@ -102,13 +143,14 @@
     height: 50px;
     position: relative;
     left: 80%;
-    bottom: 15px;
+    bottom: 57px;
 }
 #checkbox-form{
     height: 100%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     box-sizing: border-box;
     padding: 20px;
+    padding-left: 2rem;
     display: grid;
     grid-template-columns: 50px 1fr;
     gap: 20px;
@@ -127,6 +169,8 @@
 .checkbox-0-2 {
     /* flex: 80%; */
     font-size: 20px;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-style: normal;
 }
 input.checkbox-input {
     width: 40px;
