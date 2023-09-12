@@ -8,8 +8,32 @@
 }
 .page1{
     background-image: url("./asset/Section3/desk_BG.png");
-    background-size: cover;
-    height: 500px;
+    background-size: contain;
+    height: 2534px;
+}
+.page1-img{
+    position: relative;
+}
+#page1-img-1{
+    width: 345px;
+    height: 806px;
+    transform: rotate(53.46deg);
+    /* transform: scale(0.8); */
+    left: 350px;
+}
+#page1-img-2{
+    width: 676px;
+    height: 761px;
+    /* transform: scale(0.8); */
+    left: 450px;
+    top: 460px;
+}
+#page1-img-3{
+    width: 653px;
+    height: 815px;
+    transform: scale(0.8);
+    left: 200px;
+    top: 520px;
 }
 .page2{
     background-image: url("./asset/Section3/checklist_BG.png");
