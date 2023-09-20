@@ -24,17 +24,25 @@ let messages = [
     {
         page: "3",
         text: "การก่อสร้าง ดัดแปลง หรือรื้อถอน ระดับเสียงไม่เกิน 115 เดซิเบล ในช่วง 6:00 - 22:00 น. และไม่เกิน 75 เดซิเบล ในช่วงเวลา 22:00 - 6:00 น.",
-        res_rule: "กำหนดมาตราฐานระบบเสียงโดยทั่วไป ฉบับที่ 15 (พ.ศ. 2540)"
+        res_rule: "กำหนดมาตราฐานระบบเสียงโดยทั่วไป ฉบับที่ 15 (พ.ศ. 2540)",
+        html:`<img id="cl_4_1" src="./asset/Section3/checklist_4.1.png">
+            <img id="cl_4_2" src="./asset/Section3/checklist_4.2(sound).svg">`
     },
     {
         page: "4",
         text: "หลังทำความสะอาดพื้นที่ก่อสร้างแล้วไม่ให้น้ำที่ฉีดไหลออกนอกบริเวณก่อสร้างลงสู่พื้นผิวถนนหรือท่อระบายน้ำสาธารณะ",
-        res_rule: "ระเบียบและข้อปฏิบัติในการควบคุมฝุ่นละออง<br>จากการก่อสร้างอาคาร ข้อ 4.3"
+        res_rule: "ระเบียบและข้อปฏิบัติในการควบคุมฝุ่นละออง<br>จากการก่อสร้างอาคาร ข้อ 4.3",
+        html:`<img id="cl_2_1" src="./asset/Section3/checklist_2.1.png">
+        <img id="cl_2_2" src="./asset/Section3/checklist_2.2.png">
+        <img id="cl_2_3" src="./asset/Section3/checklist_2.3.png">`
     },
     {
         page: "5",
         text: "ใช้ดินเหนียวถมที่ดินก่อนก่อสร้างและไม่ใช้เศษอิฐหรือเศษปูนมาผสมกับดินที่ใช้ในการถม",
-        res_rule: ""
+        res_rule: "",
+        html:`<img id="cl_2_1" src="./asset/Section3/checklist_2.1.png">
+        <img id="cl_2_2" src="./asset/Section3/checklist_2.2.png">
+        <img id="cl_2_3" src="./asset/Section3/checklist_2.3.png">`
     }
     
 ]
@@ -45,15 +53,21 @@ function nextElem(){
     head_text.innerHTML = `รายการ ${head_count.count}/5`
     message.innerHTML = messages[head_count.count-1].text
     rule.innerHTML = messages[head_count.count-1].res_rule
+    html += messages[head_count.count-1].html
     object.innerHTML = html;
 }
 
 function showElem(el){
     if (el.checked == 0 ){
         cl_1_2.style.display = "none";
+        cl_2_3.style.display = "none";
+        
     }
     else{
         cl_1_2.style.display = "block";
+        cl_2_3.style.display = "block";
+        cl_2_2.style.animation = "dissapear 1s linear 1s forwards";
+        
     }
 }
 
