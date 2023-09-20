@@ -4,6 +4,7 @@ let message = document.querySelector("#box-message")
 let rule = document.querySelector('#rule-text')
 let checkbox = document.getElementById('checkbox')
 let cl_1_2 = document.querySelector("#cl_1_2")
+// let cl_2_3 = document.getElementById("cl_2_3")
 let object = document.getElementById("object-img")
 let messages = [
     {
@@ -32,17 +33,17 @@ let messages = [
         page: "4",
         text: "หลังทำความสะอาดพื้นที่ก่อสร้างแล้วไม่ให้น้ำที่ฉีดไหลออกนอกบริเวณก่อสร้างลงสู่พื้นผิวถนนหรือท่อระบายน้ำสาธารณะ",
         res_rule: "ระเบียบและข้อปฏิบัติในการควบคุมฝุ่นละออง<br>จากการก่อสร้างอาคาร ข้อ 4.3",
-        html:`<img id="cl_2_1" src="./asset/Section3/checklist_2.1.png">
-        <img id="cl_2_2" src="./asset/Section3/checklist_2.2.png">
-        <img id="cl_2_3" src="./asset/Section3/checklist_2.3.png">`
+        html:`<img id="cl_3_1" src="./asset/Section3/checklist_3.1.png">
+        <img id="cl_3_3" src="./asset/Section3/checklist_3.3.png">
+        <img id="cl_3_2" src="./asset/Section3/checklist_3.2.png">
+        <img id="cl_3_4" src="./asset/Section3/checklist_3.4.png">`
     },
     {
         page: "5",
         text: "ใช้ดินเหนียวถมที่ดินก่อนก่อสร้างและไม่ใช้เศษอิฐหรือเศษปูนมาผสมกับดินที่ใช้ในการถม",
         res_rule: "",
-        html:`<img id="cl_2_1" src="./asset/Section3/checklist_2.1.png">
-        <img id="cl_2_2" src="./asset/Section3/checklist_2.2.png">
-        <img id="cl_2_3" src="./asset/Section3/checklist_2.3.png">`
+        html:`<img id="cl_5_2" src="./asset/Section3/checklist_5.2.png">
+        <img id="cl_5_1" src="./asset/Section3/checklist_5.1.png">`
     }
     
 ]
@@ -59,15 +60,36 @@ function nextElem(){
 
 function showElem(el){
     if (el.checked == 0 ){
-        cl_1_2.style.display = "none";
-        cl_2_3.style.display = "none";
-        
+        if(head_count.count == 1){
+            cl_1_2.style.animation = "moveUp 1s linear forwards"
+        }
+        else if(head_count.count == 2){
+            cl_2_3.style.animation = "moveLeftToRight 1s linear forwards";
+            cl_2_2.style.animation = "fade-in 1s linear forwards";
+        }
+        else if(head_count.count == 4){
+            cl_3_4.style.display = "none";
+        }else if(head_count.count == 5){
+            cl_5_1.style.display = "block";
+        }
     }
     else{
-        cl_1_2.style.display = "block";
-        cl_2_3.style.display = "block";
-        cl_2_2.style.animation = "dissapear 1s linear 1s forwards";
-        
+        if(head_count.count == 1){
+            cl_1_2.style.display = "block"
+            cl_1_2.style.animation = "moveDown 1s linear forwards"
+        }
+        else if( head_count.count == 2){
+            cl_2_3.style.display = "block";
+            cl_2_3.style.animation = "moveRightToLeft 1s linear forwards";
+            cl_2_2.style.animation = "fade-out 1s linear 1s forwards";
+            
+        }
+        else if(head_count.count == 4){
+            cl_3_4.style.display = "block";
+            cl_3_3.style.animation = "fade-out 1s linear 1s forwards";
+        }else if(head_count.count == 5){
+            cl_5_1.style.animation = "fade-out 1s linear .3s forwards";
+        }
     }
+    
 }
-
