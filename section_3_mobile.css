@@ -104,5 +104,14 @@
         transform: translateX(-50%);
         left:50%;
     }
-
+    .page3 .page3-container img#frence3{
+        display: block;
+        width: 620px;
+        bottom:120px;
+        transform: translateX(-50%);
+        left:50%;
+    }
+    .page3 .page3-container img#workman{
+        display:none
+    }
 }

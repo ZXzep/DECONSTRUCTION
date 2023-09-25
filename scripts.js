@@ -9,12 +9,16 @@ let checkbox3 = document.getElementById('checkbox3')
 let checkbox4 = document.getElementById('checkbox4')
 let checkbox5 = document.getElementById('checkbox5')
 let cl_1_2 = document.querySelector("#cl_1_2")
+let stamp = document.querySelector("#stamp");
+let result_message = document.querySelector("#result-message");
+let adv_message = document.querySelector("#adv-message");
 // let cl_2_3 = document.getElementById("cl_2_3")
 let object = document.getElementById("object-img")
 let checklist = document.querySelector('.checklist');
 let page_1 = document.querySelector(".page1")
 let page_2 = document.querySelector(".page2")
 let page_3 = document.querySelector(".page3")
+let num = 0;
 
 let messages = [
     {
@@ -74,13 +78,27 @@ function nextElem(){
     if( head_count.count == 5){
         document.querySelector('.nextpage-container').setAttribute('onclick', "changeSection(this)")
     }
-
     // Animation class checklist when Click next question
     checklist.classList.toggle("fade_in");
     checklist.addEventListener("webkitAnimationEnd", callback_nextPage, false);
     checkbox.dataset.val = parseInt(checkbox.dataset.val) + 1;
+    checkResult(num);
 }
 
+function checkResult(result){
+    if(result < 3){
+        stamp.src = "./asset/Section3/checklist_stamp3.png"
+        result_message.innerHTML = "โครงการของคุณไม่ผ่านการประเมิน"
+        adv_message.innerHTML = "ข้อเสนอแนะ : <br>\
+                                ไม่อยากจะเชื่อเลยว่าจะเจอนักก่อเรื่องอยู่ตรงนี้<br>\
+                                ได้เวลารู้บทเรียนของการขาดความรับผิดชอบแล้วล่ะ"
+    }else{
+        stamp.src = "./asset/Section3/checklist_stamp2.png"
+        result_message.innerHTML = "โครงการของคุณผ่านการประเมิน"
+        adv_message.innerHTML = "ข้อเสนอแนะ : <br>\
+                                คุณเป็นนักก่อสร้างที่ดีขอบคุณที่ใส่ใจสิ่งแวดล้อมเป็นอย่างดีรับสิ่งที่คู่ควรคุณได้เลย</h3>"
+    }
+}
 function showElem(el){
     // if input is not checked
     if (el.checked == 0 ){
@@ -130,6 +148,10 @@ function showElem(el){
 function handleClick(el){
     if(el.checked){
         document.querySelector(`.checkbox-result:nth-child(${el.dataset.val})`).checked = true;
+        num += 1
+    }else{
+        document.querySelector(`.checkbox-result:nth-child(${el.dataset.val})`).checked = false;
+        num -= 1
     }
 }
 document.addEventListener("scroll",function(){   
@@ -146,17 +168,12 @@ document.addEventListener("scroll",function(){
     animationLeft2Right(page_1_text)
     animationRight2left(page_2_text)
     animationLeft2Right(page_3_text)
-    console.log(gg)
-    console.log("Value, ",value)
-    console.log("Page_1_y, ",page_1_y)
-    console.log("Page_1_text, ",page_1_text.getBoundingClientRect())
 })
 
 function animationLeft2Right(el){
     let value = window.scrollY
     if(el.getBoundingClientRect().y < 40){
         el.style.animation = "fade-out-right-to-left 1s linear forwards"
-        console.log(el)
     }
     else if(el.getBoundingClientRect().y > 0){
         el.style.animation = "fade-in-left-to-right 1s linear forwards"

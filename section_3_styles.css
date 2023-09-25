@@ -147,6 +147,7 @@ section{
     display: flex;
     justify-content: center;
     z-index: 1;
+    overflow-y: hidden;
 }
 .page3 .page3-container{
     background-image: url("./asset/Section3/checklist_result4.png");
@@ -184,7 +185,22 @@ section{
     right: 0;
     bottom: 0;
     z-index: 1;
-
+}
+.page3 .page3-container img#frence3{
+    position: absolute;
+    width: 830px;
+    transform: translateX(-50%);
+    left:50%;
+    bottom: 140px;
+    z-index: 2;
+    animation: fade-out 1s linear infinite alternate;
+}
+.page3 .page3-container img#workman{
+    position: absolute;
+    width: 900px;
+    right: -40%;
+    bottom: 0;
+    z-index: 0;
 }
 .page3 .page3-container .page3-box{
     position: relative;
@@ -591,7 +607,6 @@ input.checkbox-input {
     100%{transform: translate(-100px);
         opacity: 0;}
   }
-  
   .page2{
     display:none;
   }
