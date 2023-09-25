@@ -166,7 +166,7 @@ section{
     background-size: cover;
     display: flex;
     justify-content: center;
-    z-index: -1;
+    z-index: 1;
 }
 .page3 .page3-container{
     background-image: url("./asset/Section3/checklist_result4.png");
