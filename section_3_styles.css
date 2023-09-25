@@ -25,11 +25,11 @@ section{
 }
 
 .page1-container{
-    width: 80%;
+    width: 70%;
     height: 90%;
     border: 1px solid navy;
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 40% 40%;
     grid-template-rows: repeat(3,1fr);
     justify-content: center;
     padding: 20px;
