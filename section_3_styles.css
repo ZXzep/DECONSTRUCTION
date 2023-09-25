@@ -133,6 +133,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 
 
 }
@@ -147,6 +148,7 @@ section{
     display: flex;
     justify-content: center;
     z-index: 1;
+    overflow: hidden;
 }
 .page3 .page3-container{
     background-image: url("./asset/Section3/checklist_result4.png");
@@ -184,7 +186,45 @@ section{
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+.page3 .page3-container img.light{
+    position: absolute;
+    width:520px;
+    transform: translateX(-50%);
+    left:50%;
+    bottom: 210px;
+    border-radius: 50%;
+    box-shadow: rgba(253, 228, 89, 0.034) 0px 50px 100px -20px, rgba(252, 190, 76, 0.3) 0px 30px 60px -30px;
+    z-index: 2;
+    
+}
+.page3 .page3-container img.light:nth-child(1){
+    left:10%;
+    --time:.5s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+.page3 .page3-container img.light:nth-child(2){
+    left:42%;
+    --time:.4s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+.page3 .page3-container img.light:nth-child(3){
+    left:59%;
+    --time:.9s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+.page3 .page3-container img.light:nth-child(4){
+    left:91%;
+    --time:.8s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
 
+.page3 .page3-container img#workman{
+    position: absolute;
+    width: 900px;
+    right: -40%;
+    bottom: 0;
+    z-index: 0;
 }
 .page3 .page3-container .page3-box{
     position: relative;
@@ -271,7 +311,7 @@ section{
 .page3 .page3-container .page3-box .page3-content .result-message h3{
     font-size: .9rem;
 }
-.page3 .page3-container .page3-box img#allow_stamp{
+.page3 .page3-container .page3-box img#stamp{
     position: absolute;
     top: 1rem;
     right: 20px;
@@ -566,4 +606,34 @@ input.checkbox-input {
     to {
       opacity: 0;
     }
+  }
+  @keyframes fade-in-left-to-right{
+    0%{transform: translate(-100px);
+        opacity: 0;}
+    100%{transform: translate(0);
+        opacity: 1;}
+  }
+  @keyframes fade-out-left-to-right{
+    0%{transform: translate(0);
+        opacity: 1;}
+    100%{transform: translate(100px);
+        opacity: 0;}
+  }
+  @keyframes fade-in-right-to-left{
+    0%{transform: translate(100px);
+        opacity: 0;}
+    100%{transform: translate(0);
+        opacity: 1;}
+  }
+  @keyframes fade-out-right-to-left{
+    0%{transform: translate(0);
+        opacity: 1;}
+    100%{transform: translate(-100px);
+        opacity: 0;}
+  }
+  .page2{
+    display:none;
+  }
+  .page3{
+    display:none;
   }

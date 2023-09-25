@@ -15,30 +15,31 @@
 </head>
 <body>
 
-    <section class="page1">
+    <section class="page1" >
         <img src="./asset/Section3/desk_stuff_1.png" class="page1-hand" id="page1-hand">
-        <div class="page1-container">
+        <div class="page1-container">    
             <div class="page1-box" id="page1-box-1">
-                <div class="page1-box" id="page1-box-1-1"></div>
+                <div class="page1-box" id="page1-box-1"></div>
                 <div class="page1-text" id="page1-text-1">คุณเป็นนักก่อสร้างที่ดี?</div>
                 <img src="./asset/Section3/desk_stuff_2.png">
             </div>
-            <div class="page1-text page1-text2">มาพิสูจน์โครงการของคุณกัน</div>
+            <div class="page1-text page1-text2" id="page1-text-2">มาพิสูจน์โครงการของคุณกัน</div>
             <div class="page1-box" id="page1-box-2">
                 <img src="./asset/Section3/desk_stuff_3.png">
             </div>
-            <div class="page1-text page1-text3">ว่าคุณเป็นนักก่อสร้าง<br>หรือนักก่อเรื่อง?</div>
+            <div class="page1-text page1-text3" id="page1-text-3">ว่าคุณเป็นนักก่อสร้าง<br>หรือนักก่อเรื่อง?</div>
             <div class="page1-box" id="page1-box-3">
                 <img class="page1-img-clipboard-logo" src="./asset/Section3/Logo.png">
                 <img class="page1-img-clipboard-checklist" src="./asset/Section3/checklist_stamp.png">
-                <div class="page1-clipboard-text"><p>คุณกำลังจะทำประเมินก่อนก่อสร้างโครงการสำคัญระดับพันล้าน! ลองมาเช็คกันดีกว่าว่าโครงการของคุณจะผ่านการประเมิญหรือไม่?</p></div>
-                <div class="page1-clipboard-submit"><div>ทำแบบประเมิน</div></div>
+                <div class="page1-clipboard-text"><p >คุณกำลังจะทำประเมินก่อนก่อสร้างโครงการสำคัญระดับพันล้าน! ลองมาเช็คกันดีกว่าว่าโครงการของคุณจะผ่านการประเมิญหรือไม่?</p></div>
+                <div class="page1-clipboard-submit"  data-page="1" onclick="changeSection(this)"><div>ทำแบบประเมิน</div></div>
             </div>
         </div>
-
+        <img src="./asset/Section3/desk_stuff_1.png" class="page1-hand" id="page1-hand">
+        
     </section>
 
-    <section class="page2">
+    <section class="page2" >
         <div class="checklist">
             <div class="checklist-content-background">
                 <div class="content-img" id="object-img">
@@ -58,7 +59,7 @@
                         <form id="checkbox-form" action="">
                             <div class="checkbox-0">
                                 <div class="checkbox-0-1">
-                                    <input class="checkbox-input" type="checkbox" id="checkbox" onclick="showElem(this)">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox" data-val="1" onclick="showElem(this);handleClick(this)">
                                 </div>
                             </div>
                             <div class="checkbox-1">
@@ -77,35 +78,40 @@
                     </div>
                 </div>
 
-                <div class="nextpage-container" onclick="nextElem()">
+                <div class="nextpage-container" data-page="2"  onclick="nextElem()">
                     <p style="align-self: center;">ไซต์<br>ต่อไป</p>
                 </div>
             </div>
-
         </div>
     </section>
-    <section class="page3">
+    <section class="page3" data-page="3">
         <div class="page3-container">
+            <!-- ไฟ -->
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <!--  -->
             <img id="result2" src="./asset/Section3/checklist_result2.png" alt="">
             <img id="frence1" src="./asset/Section3/checklist_result3.png" alt="">
             <img id="frence2" src="./asset/Section3/checklist_result3.png" alt="">
+            <img id="workman" src="./asset/Section2/Road digger.png" alt="">
             <div class="page3-box">
-                <img id="allow_stamp" src="./asset/Section3/checklist_stamp2.png" alt="">
+                <img id="stamp" src="./asset/Section3/checklist_stamp2.png" alt="">
                 <div class="page3-content">
                     <h1>ผลการประเมิน</h1>
                     <div class="result-box">
-                        <input class="checkbox-result" type="checkbox" id="checkbox">
-                        <input class="checkbox-result" type="checkbox" id="checkbox">
-                        <input class="checkbox-result" type="checkbox" id="checkbox">
-                        <input class="checkbox-result" type="checkbox" id="checkbox">
-                        <input class="checkbox-result" type="checkbox" id="checkbox">
+                        <input class="checkbox-result" type="checkbox" id="checkbox1" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox2" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox3" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox4" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox5" disabled >
                     </div>
-                    <h2>โครงการของคุณผ่านการประเมิน</h2>
+                    <h2 id="result-message"></h2>
                     <div class="result-message">
-                        <h3>ข้อเสนอแนะ : <br>
-                            คุณเป็นนักก่อสร้างที่ดีขอบคุณที่ใส่ใจสิ่งแวดล้อมเป็นอย่างดีรับสิ่งที่คู่ควรคุณได้เลย</h3>
+                        <h3 id="adv-message"></h3>
                     </div>
-                    <button>เข้าสู่เฟสต่อไป</button>
+                    <button data-page="3" onclick="changeSection(this)">เข้าสู่เฟสต่อไป</button>
                 </div>
             </div>
         </div>
