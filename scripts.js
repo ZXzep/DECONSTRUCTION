@@ -85,7 +85,7 @@ function showElem(el){
             cl_3_3.style.animation = "fade-in 1s linear forwards";
             
         }else if(head_count.count == 5){
-            cl_5_1.style.display = "block";
+            cl_5_1.style.animation = "fade-in 1s linear forwards";
         }
     }
     // if input is checked
@@ -102,7 +102,6 @@ function showElem(el){
         }
         else if(head_count.count == 3){
             document.querySelector('.wavy').style.animation = "fade-out .5s linear  forwards";
-            // cl_4_2.style.display = "none";
         }
         else if(head_count.count == 4){
             cl_3_4.style.display = "block"
