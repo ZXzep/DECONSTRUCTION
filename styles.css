@@ -66,13 +66,16 @@
 }
 .checklist{
     /* border: 2px solid blue; */
-    scale: 100%;
+    position: relative;
+    top:-4rem;
+    height: 90%;
+    scale: 80%;
     
 }
 .checklist-content-background{
     margin: 0;
     box-sizing: border-box;
-    padding: 80px 50px 50px 50px;
+    /* padding: 80px 50px 50px 50px; */
     position: relative;
     
 }
@@ -142,8 +145,12 @@
     width: 50px;
     height: 50px;
     position: relative;
-    left: 80%;
-    bottom: 57px;
+    text-align: center;
+    left:88%;
+    bottom: 62px;
+    color:white;
+    border-radius: 10% 10% 0% 0%;
+    cursor: pointer;
 }
 #checkbox-form{
     height: 100%;
