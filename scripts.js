@@ -3,10 +3,19 @@ let head_text = document.querySelector("#content-head")
 let message = document.querySelector("#box-message")
 let rule = document.querySelector('#rule-text')
 let checkbox = document.getElementById('checkbox')
+let checkbox1 = document.getElementById('checkbox1')
+let checkbox2 = document.getElementById('checkbox2')
+let checkbox3 = document.getElementById('checkbox3')
+let checkbox4 = document.getElementById('checkbox4')
+let checkbox5 = document.getElementById('checkbox5')
 let cl_1_2 = document.querySelector("#cl_1_2")
 // let cl_2_3 = document.getElementById("cl_2_3")
 let object = document.getElementById("object-img")
 let checklist = document.querySelector('.checklist');
+let page_1 = document.querySelector(".page1")
+let page_2 = document.querySelector(".page2")
+let page_3 = document.querySelector(".page3")
+
 let messages = [
     {
         page: "1",
@@ -61,10 +70,15 @@ function nextElem(){
     rule.innerHTML = messages[head_count.count-1].res_rule
     html += messages[head_count.count-1].html
     object.innerHTML = html;
+    head_text.innerHTML = `รายการ ${head_count.count}/5`
+    if( head_count.count == 5){
+        document.querySelector('.nextpage-container').setAttribute('onclick', "changeSection(this)")
+    }
 
     // Animation class checklist when Click next question
     checklist.classList.toggle("fade_in");
     checklist.addEventListener("webkitAnimationEnd", callback_nextPage, false);
+    checkbox.dataset.val = parseInt(checkbox.dataset.val) + 1;
 }
 
 function showElem(el){
@@ -112,5 +126,60 @@ function showElem(el){
             cl_5_1.style.animation = "fade-out 1s linear .3s forwards";
         }
     }
-    
 }
+function handleClick(el){
+    if(el.checked){
+        document.querySelector(`.checkbox-result:nth-child(${el.dataset.val})`).checked = true;
+    }
+}
+document.addEventListener("scroll",function(){   
+    let page_1_text = document.querySelector("#page1-text-1")
+    let page_2_text = document.querySelector("#page1-text-2")
+    let page_3_text = document.querySelector("#page1-text-3")
+    let page_1_box = document.querySelector("#page1-box-1")
+    let page_2_box = document.querySelector("#page1-box-2")
+    let page_3_box = document.querySelector("#page1-box-3")
+    let page_1_hand = document.querySelector("#page1-hand")
+    let page_1_y = page_1.getBoundingClientRect().y
+    let value = window.scrollY
+    let gg = document.documentElement.scrollHeight 
+    animationLeft2Right(page_1_text)
+    animationRight2left(page_2_text)
+    animationLeft2Right(page_3_text)
+    console.log(gg)
+    console.log("Value, ",value)
+    console.log("Page_1_y, ",page_1_y)
+    console.log("Page_1_text, ",page_1_text.getBoundingClientRect())
+})
+
+function animationLeft2Right(el){
+    let value = window.scrollY
+    if(el.getBoundingClientRect().y < 40){
+        el.style.animation = "fade-out-right-to-left 1s linear forwards"
+        console.log(el)
+    }
+    else if(el.getBoundingClientRect().y > 0){
+        el.style.animation = "fade-in-left-to-right 1s linear forwards"
+    }
+}
+function animationRight2left(el){
+    let value = window.scrollY
+    if(el.getBoundingClientRect().y < 40){
+        el.style.animation = "fade-out-left-to-right 1s linear forwards"
+    }
+    else if(el.getBoundingClientRect().y > 0){
+        el.style.animation = "fade-in-right-to-left 1s linear forwards"
+    }
+}
+
+function changeSection(el){
+    if(el.dataset.page == 1){
+        page_1.style.display = "none"
+        page_2.style.display = "flex"
+    }
+    if(el.dataset.page == 2){
+        page_2.style.display = "none"
+        page_3.style.display = "flex"
+    }
+}
+    

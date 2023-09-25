@@ -271,7 +271,7 @@ section{
 .page3 .page3-container .page3-box .page3-content .result-message h3{
     font-size: .9rem;
 }
-.page3 .page3-container .page3-box img#allow_stamp{
+.page3 .page3-container .page3-box img#stamp{
     position: absolute;
     top: 1rem;
     right: 20px;
@@ -566,4 +566,35 @@ input.checkbox-input {
     to {
       opacity: 0;
     }
+  }
+  @keyframes fade-in-left-to-right{
+    0%{transform: translate(-100px);
+        opacity: 0;}
+    100%{transform: translate(0);
+        opacity: 1;}
+  }
+  @keyframes fade-out-left-to-right{
+    0%{transform: translate(0);
+        opacity: 1;}
+    100%{transform: translate(100px);
+        opacity: 0;}
+  }
+  @keyframes fade-in-right-to-left{
+    0%{transform: translate(100px);
+        opacity: 0;}
+    100%{transform: translate(0);
+        opacity: 1;}
+  }
+  @keyframes fade-out-right-to-left{
+    0%{transform: translate(0);
+        opacity: 1;}
+    100%{transform: translate(-100px);
+        opacity: 0;}
+  }
+  
+  .page2{
+    display:none;
+  }
+  .page3{
+    display:none;
   }
