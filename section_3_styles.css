@@ -186,15 +186,38 @@ section{
     bottom: 0;
     z-index: 1;
 }
-.page3 .page3-container img#frence3{
+.page3 .page3-container img.light{
     position: absolute;
-    width: 830px;
+    width:520px;
     transform: translateX(-50%);
     left:50%;
-    bottom: 140px;
+    bottom: 230px;
+    border-radius: 50%;
+    box-shadow: rgba(253, 228, 89, 0.034) 0px 50px 100px -20px, rgba(252, 190, 76, 0.3) 0px 30px 60px -30px;
     z-index: 2;
-    animation: fade-out 1s linear infinite alternate;
+    
 }
+.page3 .page3-container img.light:nth-child(1){
+    left:10%;
+    --time:.5s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+.page3 .page3-container img.light:nth-child(2){
+    left:41%;
+    --time:.4s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+.page3 .page3-container img.light:nth-child(3){
+    left:60%;
+    --time:.9s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+.page3 .page3-container img.light:nth-child(4){
+    left:90%;
+    --time:.8s;
+    animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
+}
+
 .page3 .page3-container img#workman{
     position: absolute;
     width: 900px;
