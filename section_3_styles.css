@@ -44,6 +44,8 @@ section{
     grid-area: 3 / 1 / span 1 / span 1;
 }
 .page1-text{
+    position: relative;
+    left: 100px;
     color: white;
 }
 #page1-box-1{
