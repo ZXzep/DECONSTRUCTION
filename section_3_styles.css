@@ -80,7 +80,8 @@ section{
 
 }
 /* ส่วนเพิ่ม CSS ของไม้ */
-.page3{
+.page3 {
+    position: relative;
     background-image: url("./asset/Section3/checklist_result BG.png");
     background-color: black;
     width: 100%;
@@ -88,13 +89,140 @@ section{
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    z-index: -1;
+}
+.page3 .page3-container{
+    background-image: url("./asset/Section3/checklist_result4.png");
+    border: 1px solid navy;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    bottom: 0;
+    z-index: 4 ;
+
 }
 
+.page3 .page3-container img#result2{
+    position: absolute;
+    width: 300px;
+    left: 160px;
+    bottom: 200px;
+    z-index: 0;
 
+}
+.page3 .page3-container img#frence1{
+    position: absolute;
+    width: 730px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 
+}
+.page3 .page3-container img#frence2{
+    position: absolute;
+    width: 730px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 
+}
+.page3 .page3-container .page3-box{
+    position: relative;
+    margin-top: 6rem;
+    margin-left:1rem;
+    width: 350px;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 99;
+}
+.page3 .page3-container .page3-box .page3-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    gap: 30px;
+    width: 100%;
+    height: 90%;
+}
+.page3 .page3-container .page3-box .page3-content h1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.page3 .page3-container .page3-box .page3-content h2{
+    font-size: 1rem;
+}
 
+.page3 .page3-container .page3-box .page3-content .result-box{
+    display: flex;
+    justify-content:space-around;
+    width: 80%;
+    height: 100px;
+}
+
+.page3 .page3-container .page3-box .page3-content button{
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    will-change: transform;
+}
+.page3 .page3-container .page3-box .page3-content button:disabled{
+    pointer-events: none;
+}
+.page3 .page3-container .page3-box .page3-content button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.page3 .page3-container .page3-box .page3-content button:active {
+    box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(56, 56, 56, 0.856) 0 8px 10px 1px, rgba(0, 0, 0, 0.774) 0 3px 14px 2px;
+    background: #202020;
+}
+.page3 .page3-container .page3-box .page3-content .result-box .checkbox-result{
+    width: 15%;
+}
+.page3 .page3-container .page3-box .page3-content .result-message{
+    width: 90%;
+    max-height: 50%;
+}
+.page3 .page3-container .page3-box .page3-content .result-message h3{
+    font-size: .9rem;
+}
+.page3 .page3-container .page3-box img#allow_stamp{
+    position: absolute;
+    top: 1rem;
+    right: 20px;
+    width: 120px;
+    transform: rotate(20deg);
+    z-index: 1;
+}
 /* End CSS ของไม้ */
 
 .checklistBox{
