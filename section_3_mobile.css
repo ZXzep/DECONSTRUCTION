@@ -4,7 +4,26 @@
     .checklist{
         scale: 90%;
     }
-    .page1{
-        background-size: ;
+    .page3 .page3-container{
+        width: 100%;
     }
+    .page3 .page3-container .page3-box{
+        border: 1px solid navy;
+        margin-top: 1rem;
+        scale: 70%;
+    }
+
+    #result2{
+        display: none;
+    }
+    #frence1{
+        display: none;
+    }
+    .page3 .page3-container img#frence2{
+        display: block;
+        width: 570px;
+        transform: translateX(-50%);
+        left:50%;
+    }
+
 }
