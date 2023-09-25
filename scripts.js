@@ -6,6 +6,7 @@ let checkbox = document.getElementById('checkbox')
 let cl_1_2 = document.querySelector("#cl_1_2")
 // let cl_2_3 = document.getElementById("cl_2_3")
 let object = document.getElementById("object-img")
+let checklist = document.querySelector('.checklist');
 let messages = [
     {
         page: "1",
@@ -27,7 +28,7 @@ let messages = [
         text: "การก่อสร้าง ดัดแปลง หรือรื้อถอน ระดับเสียงไม่เกิน 115 เดซิเบล ในช่วง 6:00 - 22:00 น. และไม่เกิน 75 เดซิเบล ในช่วงเวลา 22:00 - 6:00 น.",
         res_rule: "กำหนดมาตราฐานระบบเสียงโดยทั่วไป ฉบับที่ 15 (พ.ศ. 2540)",
         html:`<img id="cl_4_1" src="./asset/Section3/checklist_4.1.png">
-            <img id="cl_4_2" src="./asset/Section3/checklist_4.2(sound).svg">`
+            <div class="wavy"><img id="cl_4_2" class="wave" src="./asset/Section3/checklist_4.2(sound).svg"></div>`
     },
     {
         page: "4",
@@ -47,7 +48,11 @@ let messages = [
     }
     
 ]
+function callback_nextPage() {
+    checklist.classList.remove('fade_in'); 
+}
 function nextElem(){
+    // change detail in div box
     html = ""
     checkbox.checked = 0;
     head_count.count = parseInt(head_count.count) + 1
@@ -56,9 +61,14 @@ function nextElem(){
     rule.innerHTML = messages[head_count.count-1].res_rule
     html += messages[head_count.count-1].html
     object.innerHTML = html;
+
+    // Animation class checklist when Click next question
+    checklist.classList.toggle("fade_in");
+    checklist.addEventListener("webkitAnimationEnd", callback_nextPage, false);
 }
 
 function showElem(el){
+    // if input is not checked
     if (el.checked == 0 ){
         if(head_count.count == 1){
             cl_1_2.style.animation = "moveUp 1s linear forwards"
@@ -67,12 +77,18 @@ function showElem(el){
             cl_2_3.style.animation = "moveLeftToRight 1s linear forwards";
             cl_2_2.style.animation = "fade-in 1s linear forwards";
         }
+        else if(head_count.count == 3){
+            document.querySelector('.wavy').style.animation = "fade-in .5s linear forwards";
+        }   
         else if(head_count.count == 4){
-            cl_3_4.style.display = "none";
+            cl_3_4.style.animation = "moveLeftToRight 1s linear  forwards";
+            cl_3_3.style.animation = "fade-in 1s linear forwards";
+            
         }else if(head_count.count == 5){
             cl_5_1.style.display = "block";
         }
     }
+    // if input is checked
     else{
         if(head_count.count == 1){
             cl_1_2.style.display = "block"
@@ -84,9 +100,15 @@ function showElem(el){
             cl_2_2.style.animation = "fade-out 1s linear 1s forwards";
             
         }
+        else if(head_count.count == 3){
+            document.querySelector('.wavy').style.animation = "fade-out .5s linear  forwards";
+            // cl_4_2.style.display = "none";
+        }
         else if(head_count.count == 4){
-            cl_3_4.style.display = "block";
+            cl_3_4.style.display = "block"
+            cl_3_4.style.animation = "moveRightToLeft 1s linear forwards";
             cl_3_3.style.animation = "fade-out 1s linear 1s forwards";
+            
         }else if(head_count.count == 5){
             cl_5_1.style.animation = "fade-out 1s linear .3s forwards";
         }
