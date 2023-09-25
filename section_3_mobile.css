@@ -70,13 +70,14 @@
     }
     .page1-clipboard-text p{
         position: relative;
-        margin: 5%;
-        width: 62%;
         font-size: 4vw;
         text-wrap: wrap;
         left: -10px;
     }
-
+    .page1-clipboard-submit div {
+        font-size: 4vw;
+    }
+    
     /* page2 */
     .checklist{
         scale: 90%;
