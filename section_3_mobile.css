@@ -3,7 +3,7 @@
 @media (width < 391px){
 
     /* page1 */
-    
+
 
 
 
@@ -17,6 +17,9 @@
     }
 
     /* page3 */
+    .checklist{
+        scale: 90%;
+    }
     .page3 .page3-container{
         width: 100%;
     }
@@ -24,6 +27,11 @@
         margin-top: 1rem;
         scale: 70%;
     }
+        border: 1px solid navy;
+        margin-top: 1rem;
+        scale: 70%;
+    }
+
     #result2{
         display: none;
     }
@@ -36,4 +44,5 @@
         transform: translateX(-50%);
         left:50%;
     }
-}
+
+

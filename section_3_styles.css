@@ -23,6 +23,7 @@ section{
     position: relative;
     width: 70%;
     height: 90%;
+    border: 1px solid navy;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3,1fr);
@@ -72,6 +73,19 @@ section{
     /* background:url("./asset/Section3/desk_stuff_2.png");
     background-repeat: no-repeat;
     background-size: contain; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 75px;
+}
+#page1-box-1{
+    width: 150%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    background:url("./asset/Section3/desk_stuff_2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     /* height: 806px; */
     /* transform: rotate(53.46deg); */
     /* top: 100px;
@@ -176,6 +190,11 @@ section{
 }
 .page3 .page3-container{
     background-image: url("./asset/Section3/checklist_result4.png");
+    z-index: 1;
+}
+.page3 .page3-container{
+    background-image: url("./asset/Section3/checklist_result4.png");
+    border: 1px solid navy;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -317,6 +336,7 @@ section{
     padding-bottom: 50px;
 }
 .checklist{
+    /* border: 2px solid blue; */
     position: relative;
     width: 380px;
     height: 570px;
