@@ -124,9 +124,9 @@ section{
 }
 .page1-img-clipboard-checklist{
     width: 33%;
-    margin: 0;
-    position: relative;
-    left: -5%;
+    position: absolute;
+    top: 25%;
+    right: 9%;
     transform: rotate(-15deg);
 }
 .page1-clipboard-text{
