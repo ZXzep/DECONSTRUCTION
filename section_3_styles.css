@@ -20,12 +20,8 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
-<<<<<<< Updated upstream
     height: 200vh;
     overflow: hidden;
-=======
-    height: 2534px;
->>>>>>> Stashed changes
 }
 
 .page1-container{
@@ -44,58 +40,12 @@ section{
 }
 .page1-box:nth-child(1){
     grid-area: 1 / 1 / span 1 / span 1;
-<<<<<<< Updated upstream
-=======
-}
-.page1-box:nth-child(2){
-    grid-area: 2 / 2 / span 1 / span 1;
->>>>>>> Stashed changes
 }
 .page1-box:nth-child(3){
     grid-area: 2 / 2 / span 1 / span 1;
 }
 .page1-box:nth-child(5){
     grid-area: 3 / 1 / span 1 / span 1;
-<<<<<<< Updated upstream
-=======
-}
-#page1-box-1{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: relative;
-    background:url("./asset/Section3/desk_stuff_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 345px;
-    height: 806px;
-    /* transform: rotate(53.46deg); */
-    left: 0;
-}
-#page1-box-2{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: relative;
-    background:url("./asset/Section3/desk_stuff_3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#page1-box-3{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: relative;
-    background:  url("./asset/Section3/checklist_clipboard.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.page1-img-clipboard{
-    margin: 9rem 0 0 3rem;
-}
-.page1-img-clipboard-checklist{
-    width: 50%;
->>>>>>> Stashed changes
 }
 .page1-text{
     color: white;
