@@ -1,22 +1,6 @@
 /* mobile 390 x 844 iphone14*/
 
 @media (width < 391px){
-
-    /* page1 */
-
-
-
-
-
-
-
-
-    /* page2 */
-    .checklist{
-        scale: 90%;
-    }
-
-    /* page3 */
     .checklist{
         scale: 90%;
     }
@@ -24,10 +8,6 @@
         width: 100%;
     }
     .page3 .page3-container .page3-box{
-        margin-top: 1rem;
-        scale: 70%;
-    }
-        border: 1px solid navy;
         margin-top: 1rem;
         scale: 70%;
     }
@@ -45,4 +25,4 @@
         left:50%;
     }
 
-
+}

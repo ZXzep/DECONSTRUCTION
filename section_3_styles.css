@@ -23,7 +23,6 @@ section{
     position: relative;
     width: 70%;
     height: 90%;
-    border: 1px solid navy;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3,1fr);
@@ -59,20 +58,6 @@ section{
 }
 
 #page1-text-1{
-    padding-left: 200px;
-    display: flex;
-    position: relative;
-    /* justify-content: center; */
-    top: 75px;
-}
-#page1-box-1{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: relative;
-    /* background:url("./asset/Section3/desk_stuff_2.png");
-    background-repeat: no-repeat;
-    background-size: contain; */
     display: flex;
     position: relative;
     justify-content: center;
@@ -112,12 +97,6 @@ section{
     background-repeat: no-repeat;
     background-size: contain;
     left: 0;
-}
-#page1-box1-img{
-    width: 100%;
-}
-#page1-box2-img{
-    width: 100%;
 }
 .page1-img-clipboard-logo{
     margin: 42% 0 0 12%;
@@ -186,15 +165,10 @@ section{
     background-size: cover;
     display: flex;
     justify-content: center;
-    z-index: -1;
-}
-.page3 .page3-container{
-    background-image: url("./asset/Section3/checklist_result4.png");
     z-index: 1;
 }
 .page3 .page3-container{
     background-image: url("./asset/Section3/checklist_result4.png");
-    border: 1px solid navy;
     background-position: center;
     background-size: cover;
     position: absolute;
