@@ -68,7 +68,14 @@
         left: -25px;
         transform: rotate(-15deg);
     }
-
+    .page1-clipboard-text p{
+        position: relative;
+        margin: 5%;
+        width: 62%;
+        font-size: 4vw;
+        text-wrap: wrap;
+        left: -10px;
+    }
 
     /* page2 */
     .checklist{
