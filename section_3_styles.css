@@ -42,7 +42,7 @@ section{
 }
 .page1-text{
     color: white;
-    font-size: 32px;
+    font-size: 50px;
 }
 .page1-text2 {
     display: flex;
@@ -196,7 +196,7 @@ section{
     border-radius: 50%;
     box-shadow: rgba(253, 228, 89, 0.034) 0px 50px 100px -20px, rgba(252, 190, 76, 0.3) 0px 30px 60px -30px;
     z-index: 2;
-    
+
 }
 .page3 .page3-container img.light:nth-child(1){
     left:10%;
@@ -346,6 +346,7 @@ section{
     background:  url("./asset/Section3/checklist_clipboard.png");
     background-repeat: no-repeat;
     background-size: contain;
+    scale: 150%;
 
 }
 .checklist-content{
