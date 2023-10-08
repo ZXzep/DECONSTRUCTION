@@ -53,8 +53,9 @@ section{
 }
 .page1-text3 {
     display: flex;
-    justify-content: end;
-    align-self: first baseline;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #page1-text-1{
@@ -71,11 +72,11 @@ section{
 }
 #page1-box-3{
     width: 500px;
-    
     margin: 0;
     position: relative;
     background:  url("./asset/Section3/checklist_clipboard.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     left: 0;
 }
@@ -98,12 +99,11 @@ section{
 .page1-clipboard-text p{
     margin: 5%;
     width: 62%;
-    font-size: 20px;
+    font-size: 24px;
 }
 .page1-clipboard-submit{
     display: flex;
     justify-content: center;
-    margin: 12% 0 20% 0;
 }
 .page1-clipboard-submit div{
     background: #DD4E4D;
@@ -305,7 +305,7 @@ section{
     background: #202020;
 }
 .page3 .page3-container .page3-box .page3-content .result-box .checkbox-result{
-    width: 15%;
+    width: 50px;
 }
 .page3 .page3-container .page3-box .page3-content .result-message{
     width: 90%;
@@ -381,16 +381,13 @@ section{
     font-family: 'Noto Sans Thai Looped', sans-serif;
 }
 
-.content-child:nth-child(3){
-    height:40%;
-}
-
 .text-img{
     margin-left: 2rem;
     top:46%;
     font-family: 'K2D', sans-serif;
     font-size: 12px;
     font-style: italic;
+    z-index: 1;
 }
 .checkbox{
     display: flex;
