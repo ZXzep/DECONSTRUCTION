@@ -30,7 +30,7 @@ section{
     margin: 0;
 }
 .page1 .page1_top_child .page1_textContainer{
-    /* position: fixed; ส่วนนี้เดี๋ยวเอาไว้ทำ js */
+    position: relative;
     width: 500px;
     height: 200px;
     /* border: 2px solid white; */
@@ -40,6 +40,8 @@ section{
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    z-index: 99;
+    top: 700px;
 }
 .page1 .page1_bottom_child{
     position: relative;
@@ -91,28 +93,40 @@ section{
 
 .page1 .page1_bottom_child #building_1{
     position: absolute;
-    top: 220px;
+    /* top_default is 220px */
+    top: 280px;
     left: 300px;
     z-index: 1;
+    opacity: 0;
+    transition: linear .75s;
 }
 .page1 .page1_bottom_child #building_2{
     position: absolute;
-    top: 650px;
+    /* top_default is 650px */
+    top: 710px;
     left: 500px;
     z-index: 3;
+    opacity: 0;
+    transition: linear .75s;
 }
 .page1 .page1_bottom_child #building_3{
     position: absolute;
-    top: 800px;
+    /* top_default is 800px */
+    top: 860px;
     left: 400px;
     height: 450px;
     z-index: 6;
+    opacity: 0;
+    transition: linear .75s;
 }
 .page1 .page1_bottom_child #building_4{
     position: absolute;
-    top: 750px;
+    /* top_default is 750px */
+    top: 810px;
     left: 900px;
     z-index: 5;
+    opacity: 0;
+    transition: linear .75s;
 }
 /* .page1 .page1_bottom_child #building_6{
     position: absolute;
@@ -125,7 +139,15 @@ section{
     height: 250px;
     z-index: 1;
     transform: scaleX(-1);
+    animation: rotate_crane1 linear infinite 5s;
 }
+
+@keyframes rotate_crane1{
+    0%{transform: rotate3d(0, 1, 0, 180deg);}
+    50%{transform: rotate3d(0, 1, 0, 215deg);}
+    100%{transform: rotate3d(0, 1, 0, 180deg);}
+}
+
 .page1 .page1_bottom_child #construction_shadow{
     position: absolute;
     bottom: -150px;
@@ -138,13 +160,22 @@ section{
     left: 1005px;
     top: 550px;
     z-index: 6;
+    animation: rotate_crane2 infinite 5s 2s linear;
 }
+
+@keyframes rotate_crane2{
+    0%{transform: rotate3d(0, 1, 0, 0deg);}
+    50%{transform: rotate3d(0, 1, 0, -35deg);}
+    100%{transform: rotate3d(0, 1, 0, 0deg);}
+} 
+
 .page1 .page1_bottom_child #crane_2_leg{
     position: relative;
     height: 680px;
     left: 800.5px;
     top: 1230px;
     z-index: 5;
+    animation: rotate_crane_leg infinite 5s 2s linear;
 }
 .page1 .page1_bottom_child #crane_2_leg_piece{
     position: relative;
@@ -152,7 +183,15 @@ section{
     left: 765px;
     top: 1460px;
     z-index: 2;
+    animation: rotate_crane_leg infinite 5s 2s linear;
 }
+
+@keyframes rotate_crane_leg{
+    0%{transform: translatex(0px);}
+    50%{transform: translatex(-22px);}
+    100%{transform: translatex(0px);}
+} 
+
 .page1 .page1_bottom_child #SmokeSkull{
     position: relative;
     top: 300px;
@@ -205,5 +244,17 @@ section{
 }
 
 .page3{
-
+    position: relative;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2160px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 3240px;
 }
+/* สี gradient ของ page3 */
+/* ##373234 */
+/* ##d83433 */
