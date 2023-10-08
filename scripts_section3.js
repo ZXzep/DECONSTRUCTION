@@ -41,7 +41,7 @@ let messages = [
         text: "การก่อสร้าง ดัดแปลง หรือรื้อถอน ระดับเสียงไม่เกิน 115 เดซิเบล ในช่วง 6:00 - 22:00 น. และไม่เกิน 75 เดซิเบล ในช่วงเวลา 22:00 - 6:00 น.",
         res_rule: "กำหนดมาตราฐานระบบเสียงโดยทั่วไป ฉบับที่ 15 (พ.ศ. 2540)",
         html:`<img id="cl_4_1" src="./asset/Section3/checklist_4.1.png">
-            <div class="wavy"><img id="cl_4_2" class="wave" src="./asset/Section3/checklist_4.2(sound).svg"></div>`
+            <div class="wavy"><img id="cl_4_2" class="wave" src="./asset/Section3/Audio Waveform.gif"></div>`
     },
     {
         page: "4",
@@ -110,7 +110,7 @@ function showElem(el){
             cl_2_2.style.animation = "fade-in 1s linear forwards";
         }
         else if(head_count.count == 3){
-            document.querySelector('.wavy').style.animation = "fade-in .5s linear forwards";
+            cl_4_2.style.animation = "fade-in .5s linear forwards";
         }   
         else if(head_count.count == 4){
             cl_3_4.style.animation = "moveLeftToRight 1s linear  forwards";
@@ -133,7 +133,7 @@ function showElem(el){
             
         }
         else if(head_count.count == 3){
-            document.querySelector('.wavy').style.animation = "fade-out .5s linear  forwards";
+            cl_4_2.style.animation = "downHeight 3s linear  forwards";
         }
         else if(head_count.count == 4){
             cl_3_4.style.display = "block"

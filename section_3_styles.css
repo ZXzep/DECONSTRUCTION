@@ -495,15 +495,16 @@ input.checkbox-input {
 .content-img .wavy{
     position: absolute;
     width: 348px;
-    height: 300px;
-    bottom:-10px;
+    height: 100px;
+    bottom:200px;
     right:17px;
     overflow: hidden;
 }
 .content-img img#cl_4_2{
     position: absolute;
+    height: 100px;
     width:130%;
-    bottom:200px;
+    top:0;
 }
 .wave{
     -webkit-animation: wave 5s linear infinite alternate;
@@ -634,6 +635,10 @@ input.checkbox-input {
         opacity: 1;}
     100%{transform: translate(-100px);
         opacity: 0;}
+  }
+  @keyframes downHeight{
+    0%{transform: scaleY(1);}
+    100%{transform: scaleY(0.5);}
   }
   .page2{
     display:none;
