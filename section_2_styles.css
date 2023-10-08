@@ -170,10 +170,10 @@
 .page1 .page1_bottom_child #crane_1{
     position: absolute;
     top: 350px;
-    left: 550px;
+    left: 350px;
     height: 250px;
-    z-index: 1;
-    transform: scaleX(-1);
+    z-index: 1; 
+    transform-origin: 320px 0 0;
     animation: rotate_crane1 linear infinite 5s;
 }
 
@@ -186,8 +186,14 @@
 .page1 .page1_bottom_child #construction_shadow{
     position: absolute;
     bottom: -150px;
-    z-index: 3;
+    z-index: 9;
     width: 100%;
+}
+.crane_2_grp{
+    position: relative;
+    transform-origin: 75% 0 0;
+    animation: rotate_crane2 infinite 5s 2s linear;
+    z-index: 8;
 }
 .page1 .page1_bottom_child #crane_2{
     position: relative;
@@ -195,7 +201,7 @@
     left: 1005px;
     top: 550px;
     z-index: 6;
-    animation: rotate_crane2 infinite 5s 2s linear;
+    transform-origin: 500px 0 0;
 }
 
 @keyframes rotate_crane2{
@@ -210,7 +216,7 @@
     left: 800.5px;
     top: 1230px;
     z-index: 5;
-    animation: rotate_crane_leg infinite 5s 2s linear;
+    /* animation: rotate_crane_leg infinite 5s 2s linear; */
 }
 .page1 .page1_bottom_child #crane_2_leg_piece{
     position: relative;
@@ -218,9 +224,13 @@
     left: 765px;
     top: 1460px;
     z-index: 2;
-    animation: rotate_crane_leg infinite 5s 2s linear;
+    /* animation: rotate_crane_leg infinite 5s 2s linear; */
 }
-
+@keyframes rotate_crane3{
+    0%{transform: rotate3d(0, 1, 0, 0deg);}
+    50%{transform: rotate3d(0, 1, 0, -70deg);}
+    100%{transform: rotate3d(0, 1, 0, 0deg);}
+} 
 @keyframes rotate_crane_leg{
     0%{transform: translatex(0px);}
     50%{transform: translatex(-22px);}
