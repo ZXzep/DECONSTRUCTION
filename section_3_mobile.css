@@ -1,87 +1,5 @@
-/* Desktop 1366 x 768 */
-@media (width < 1367px){
-    .page1-container{
-        gap:50px;
-        padding: 0px;
-        width: 90%;
-    }
-    #page1-hand{
-        right: 100px;
-    }
-    #page1-box-3 {
-        left: 200px;
-    }
-    .checklist {
-        scale: 80%;
-    }
-    .page3 .page3-container{
-        height:800px;
-    }
-    .page3 .page3-container .page3-box{
-        margin-top: 60px;
-        height:370px;
-        width:300px
-    }
-    .page3 .page3-container .page3-box .page3-content{
-        gap:20px;
-        padding: 0 10px;
-    }
-    .page3 .page3-container .page3-box .page3-content h1{
-        font-size: 30px;
-    }
-    .page3 .page3-container .page3-box .page3-content h2{
-        font-size: 20px;
-    }
-    .page3 .page3-container .page3-box .page3-content .result-message h3{
-        font-size: 18px;
-    }
-    .page3 .page3-container .page3-box .page3-content button{
-        min-height: 50px;
-        width: 140px;
-        font-size: 14px;
-    }
-    .page3 .page3-container .page3-box  img#stamp{
-        width: 110px;
-        right: 10px;
-        top:10px;
-    }
-    .page3 .page3-container img#frence1{
-        left:-100px;
-        width:550px;
-    }
-    .page3 .page3-container img#frence2{
-        right:-100px;
-        width:550px;
-    }
-    .page3 .page3-container img#workman{
-        width:600px;
-        right:-300px;
-    }
-    .page3 .page3-container img#result2{
-        width: 200px;
-        left:-50px;
-    }
-    .page3 .page3-container img.light{
-        width: 360px;
-        bottom: 170px;
-    }
-    .page3 .page3-container img.light:nth-child(1){
-        left:0px;
-    }
-    .page3 .page3-container img.light:nth-child(2){
-        left:340px;
-    }
-    .page3 .page3-container img.light:nth-child(3){
-        left:560px;
-    }
-    .page3 .page3-container img.light:nth-child(4){
-        left:900px;
-    }
-    .page3 .page3-container .page3-box .page3-content .result-box{
-        width: 200px;
-        height: 40%;
-    }
-}
+
+
 /* Desktop 1440 x 900 */
 @media (1367px <= width < 1441px ){
     .page1-container{
@@ -164,9 +82,92 @@
     }
 
 }
+/* Desktop 1366 x 768 */
+@media (426px <= width < 1367px){
+    .page1-container{
+        gap:50px;
+        padding: 0px;
+        width: 90%;
+    }
+    #page1-hand{
+        right: 100px;
+    }
+    #page1-box-3 {
+        left: 200px;
+    }
+    .checklist {
+        scale: 80%;
+    }
+    .page3 .page3-container{
+        height:800px;
+    }
+    .page3 .page3-container .page3-box{
+        margin-top: 60px;
+        height:370px;
+        width:300px
+    }
+    .page3 .page3-container .page3-box .page3-content{
+        gap:20px;
+        padding: 0 10px;
+    }
+    .page3 .page3-container .page3-box .page3-content h1{
+        font-size: 30px;
+    }
+    .page3 .page3-container .page3-box .page3-content h2{
+        font-size: 20px;
+    }
+    .page3 .page3-container .page3-box .page3-content .result-message h3{
+        font-size: 18px;
+    }
+    .page3 .page3-container .page3-box .page3-content button{
+        min-height: 50px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .page3 .page3-container .page3-box  img#stamp{
+        width: 110px;
+        right: 10px;
+        top:10px;
+    }
+    .page3 .page3-container img#frence1{
+        left:-100px;
+        width:550px;
+    }
+    .page3 .page3-container img#frence2{
+        right:-100px;
+        width:550px;
+    }
+    .page3 .page3-container img#workman{
+        width:600px;
+        right:-300px;
+    }
+    .page3 .page3-container img#result2{
+        width: 200px;
+        left:-50px;
+    }
+    .page3 .page3-container img.light{
+        width: 360px;
+        bottom: 170px;
+    }
+    .page3 .page3-container img.light:nth-child(1){
+        left:0px;
+    }
+    .page3 .page3-container img.light:nth-child(2){
+        left:340px;
+    }
+    .page3 .page3-container img.light:nth-child(3){
+        left:560px;
+    }
+    .page3 .page3-container img.light:nth-child(4){
+        left:900px;
+    }
+    .page3 .page3-container .page3-box .page3-content .result-box{
+        width: 200px;
+        height: 40%;
+    }
+}
 /* mobile 390 x 844 iphone14*/
-
-@media (361px <= width < 391px){
+@media (361px <= width <  426px){
 
     /* page1 */
     #page1-hand{
@@ -251,18 +252,17 @@
     }
 
     /* page3 */
-    .checklist-content-background {
-        /* height: 90%;
-        left: 15px; */
-    }
+    
     .content-image{
         height: 90%;
     }
     .page3 .page3-container{
-        width: 100%;
+        left: -47px;
+        width: 500px;
     }
     .page3 .page3-container .page3-box{
-        margin-top: 70px;
+        left: -3px;
+        margin-top: 100px;
         
     }
 
@@ -289,15 +289,15 @@
         display:none
     }
     .page3 .page3-container img.light{
-        bottom: 180px;
+        bottom: 140px;
     }
     .page3 .page3-container img.light:nth-child(1){
-        transform: translateX(-0%);
+        transform: translateX(-10%);
         left:50%;
 
     }
     .page3 .page3-container img.light:nth-child(2){
-        transform: translateX(-100%);
+        transform: translateX(-90%);
         left:50%;
     }
     .page3 .page3-container img.light:nth-child(3){
@@ -397,10 +397,12 @@
     /* page3 */
     .checklist-content-background {
         height: 90%;
-        left: 15px;
     }
     .content-image{
         height: 90%;
+    }
+    .checklist-content {
+        top:100px
     }
     .page3 .page3-container{
         width: 100%;
@@ -410,7 +412,7 @@
         
     }
     #checkbox-form {
-        width: 95%;
+        width: 100%;
     }
     #result2{
         display: none;
@@ -456,13 +458,21 @@
         width: 30px;
     }
     .content-img img#cl_1_1 {
-        width: 280px;
+        width: 250px;
         left: 50px;
         z-index: 0;
     }
     .content-img img#cl_1_2 {
         width: 280px;
         left:40px;
+    }
+    .content-img img#cl_2_1 {
+        width: 310px;
+        bottom: 7px;
+        left: 16px;
+    }
+    .content-img img#cl_2_2 {
+        width: 230px;
     }
     .content-img img#cl_4_1 {
         width: 312px;
@@ -480,10 +490,13 @@
     }
     .content-img img#cl_5_1{
         width: 312px;
+        height: 240px;
         left: 15px;
     }
     .content-img img#cl_5_2 {
         width: 312px;
+        height: 240px;
         left: 15px;
     }
 }
+
