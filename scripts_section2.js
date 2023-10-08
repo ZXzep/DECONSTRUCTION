@@ -6,17 +6,10 @@ let is_Sun1 = false
 let is_Sun2 = false
 let is_Sun3 = false
 let is_Sun4 = false
-function callback_nextPage1() {
-    building1.classList.remove('structure_building'); 
-}
-function callback_nextPage2() {
-    building2.classList.remove('structure_building'); 
-}
-function callback_nextPage3() {
-    building3.classList.remove('structure_building'); 
-}
-function callback_nextPage4() {
-    building4.classList.remove('structure_building'); 
+function callback_nextPage(el) {
+    return function(){
+        el.classList.remove('structure_building'); 
+    }
 }
 document.addEventListener("scroll",function(){
     let page1_textContainer = document.querySelector(".page1_textContainer");
@@ -24,7 +17,6 @@ document.addEventListener("scroll",function(){
     let y = parseInt(document.body.dataset.y)
     let text_Change1 = document.querySelector(".page1_text_change1")
     let text_Change2 = document.querySelector(".page1_text_change2")
-    console.log(is_Sun1)
     if(y >= 700 && y < 900){
         page1_textContainer.style.position = "relative"
         page1_textContainer.style.top = "700px"
@@ -41,7 +33,7 @@ document.addEventListener("scroll",function(){
         building1.style.top = "220px"
         if(is_Sun1 == false){
             building1.classList.toggle("structure_building");
-            building1.addEventListener("webkitAnimationEnd", callback_nextPage1, false);
+            building1.addEventListener("webkitAnimationEnd", callback_nextPage(building1), false);
             is_Sun1 = true
         }
         building2.style.opacity = "0"
@@ -69,7 +61,7 @@ document.addEventListener("scroll",function(){
         building4.style.top = "810px"
         if(is_Sun2 == false){
             building2.classList.toggle("structure_building");
-            building2.addEventListener("webkitAnimationEnd", callback_nextPage2, false);
+            building2.addEventListener("webkitAnimationEnd", callback_nextPage(building2), false);
             is_Sun2 = true
         }
         is_Sun4 = false
@@ -80,7 +72,7 @@ document.addEventListener("scroll",function(){
         building3.style.top = "860px"
         if(is_Sun4 == false){
             building4.classList.toggle("structure_building");
-            building4.addEventListener("webkitAnimationEnd", callback_nextPage4, false);
+            building4.addEventListener("webkitAnimationEnd", callback_nextPage(building4), false);
             is_Sun4 = true
         }
         is_Sun3 = false
@@ -89,7 +81,7 @@ document.addEventListener("scroll",function(){
         building3.style.top = "800px"
         if(is_Sun3 == false){
             building3.classList.toggle("structure_building");
-            building3.addEventListener("webkitAnimationEnd", callback_nextPage3, false);
+            building3.addEventListener("webkitAnimationEnd", callback_nextPage(building3), false);
             is_Sun3 = true
         }
     }
