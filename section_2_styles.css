@@ -1,13 +1,121 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 section{
 
 }
 .page1{
+    position: relative;
+    /* background-image: url("./asset/Section3/desk_BG_2.png"); */
+    /* background-size: contain; */
+    /* background-position: center; */
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2160px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    /* overflow: hidden; */
+    height: 3240px;
+}
+.page1 .page1_top_child{
+    position: relative;
     border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.page1 .page1_top_child .page1_textContainer{
+    /* position: fixed; ส่วนนี้เดี๋ยวเอาไว้ทำ js */
+    width: 500px;
+    height: 200px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.page1_text_red{
+
+}
+.page1 .page1_bottom_child{
+    position: relative;
+    border: 2px solid greenyellow;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(black 20%, white, white, white);
+}
+.page1 .page1_bottom_child #smoke_1{
+    position: absolute;
+    /* border: 2px solid red; */
+    top: 450px;
+    z-index: 2;
+}
+.page1 .page1_bottom_child #smoke_2{
+    position: absolute;
+    /* border: 2px solid green; */
+    top: 600px;
+    left: -250px;
+    width: 2500px;
+    z-index: 2;
+}
+.page1 .page1_bottom_child #building_1{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    z-index: 1;
+}
+.page1 .page1_bottom_child #crane_1{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    height: 250px;
+    z-index: 1;
+    transform: scaleX(-1);
+}
+.page1 .page1_bottom_child #construction_shadow{
+    position: absolute;
+    bottom: -150px;
+    z-index: 3;
+    width: 100%;
+}
+.page1 .page1_bottom_child #crane_2{
+    position: relative;
+    height: 350px;
+    left: 1005px;
+    top: 550px;
+    z-index: 2;
+}
+.page1 .page1_bottom_child #crane_2_leg{
+    position: relative;
+    height: 680px;
+    left: 800.5px;
+    top: 1230px;
+    z-index: 2;
+}
+.page1 .page1_bottom_child #crane_2_leg_piece{
+    position: relative;
+    height: 230px;
+    left: 765px;
+    top: 1460px;
+    z-index: 2;
+}
+.page2{
+
+}
+
+
+.page3{
+
 }
