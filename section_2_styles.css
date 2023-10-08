@@ -46,14 +46,14 @@ section{
 .page1_text_change1{
     position: static;
     color: red;
-    transition: linear .75s;
+    transition: linear .75s, width .25s;
     opacity: 100%;
     width: 80px;
 }
 .page1_text_change2{
     position: absolute;
     color: red;
-    transition: linear .75s;
+    transition: linear .75s, width .25s;
     opacity: 0%;
     width: 80px;
 }
