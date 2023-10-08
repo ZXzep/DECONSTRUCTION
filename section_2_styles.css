@@ -43,6 +43,20 @@ section{
     z-index: 99;
     top: 700px;
 }
+.page1_text_change1{
+    position: static;
+    color: red;
+    transition: linear .75s;
+    opacity: 100%;
+    width: 80px;
+}
+.page1_text_change2{
+    position: absolute;
+    color: red;
+    transition: linear .75s;
+    opacity: 0%;
+    width: 80px;
+}
 .page1 .page1_bottom_child{
     position: relative;
     /* border: 2px solid greenyellow; */
