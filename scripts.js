@@ -89,13 +89,13 @@ function checkResult(result){
     if(result < 3){
         stamp.src = "./asset/Section3/checklist_stamp3.png"
         result_message.innerHTML = "โครงการของคุณไม่ผ่านการประเมิน"
-        adv_message.innerHTML = "ข้อเสนอแนะ : <br>\
-                                ไม่อยากจะเชื่อเลยว่าจะเจอนักก่อเรื่องอยู่ตรงนี้<br>\
+        adv_message.innerHTML = "ข้อเสนอแนะ :\
+                                ไม่อยากจะเชื่อเลยว่าจะเจอนักก่อเรื่องอยู่ตรงนี้\
                                 ได้เวลารู้บทเรียนของการขาดความรับผิดชอบแล้วล่ะ"
     }else{
         stamp.src = "./asset/Section3/checklist_stamp2.png"
         result_message.innerHTML = "โครงการของคุณผ่านการประเมิน"
-        adv_message.innerHTML = "ข้อเสนอแนะ : <br>\
+        adv_message.innerHTML = "ข้อเสนอแนะ : \
                                 คุณเป็นนักก่อสร้างที่ดีขอบคุณที่ใส่ใจสิ่งแวดล้อมเป็นอย่างดีรับสิ่งที่คู่ควรคุณได้เลย</h3>"
     }
 }

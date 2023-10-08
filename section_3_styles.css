@@ -21,7 +21,7 @@ section{
 
 .page1-container{
     position: relative;
-    width: 70%;
+    width: 1400px;
     height: 90%;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -67,11 +67,11 @@ section{
     width: 700px;
 }
 #page1-box-2 img{
-    width: 100%;
+    width: 700px;
 }
 #page1-box-3{
-    width: 80%;
-    height: 100%;
+    width: 500px;
+    
     margin: 0;
     position: relative;
     background:  url("./asset/Section3/checklist_clipboard.png");
@@ -98,7 +98,7 @@ section{
 .page1-clipboard-text p{
     margin: 5%;
     width: 62%;
-    font-size: 1vw;
+    font-size: 20px;
 }
 .page1-clipboard-submit{
     display: flex;
@@ -107,7 +107,7 @@ section{
 }
 .page1-clipboard-submit div{
     background: #DD4E4D;
-    font-size: 1vw;
+    font-size: 20px;
     color: white;
     padding: 5%;
     border-radius: 100px;
@@ -157,8 +157,8 @@ section{
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 75%;
-    height: 100%;
+    width: 900px;
+    height: 1150px;
     bottom: 0;
     z-index: 4 ;
 
@@ -167,7 +167,7 @@ section{
 .page3 .page3-container img#result2{
     position: absolute;
     width: 300px;
-    left: 160px;
+    left: -200px;
     bottom: 200px;
     z-index: 0;
 
@@ -175,7 +175,7 @@ section{
 .page3 .page3-container img#frence1{
     position: absolute;
     width: 730px;
-    left: 0;
+    left: -280px;
     bottom: 0;
     z-index: 1;
 
@@ -183,7 +183,7 @@ section{
 .page3 .page3-container img#frence2{
     position: absolute;
     width: 730px;
-    right: 0;
+    right: -280px;
     bottom: 0;
     z-index: 1;
 }
@@ -199,22 +199,22 @@ section{
 
 }
 .page3 .page3-container img.light:nth-child(1){
-    left:10%;
+    left:-130px;
     --time:.5s;
     animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
 }
 .page3 .page3-container img.light:nth-child(2){
-    left:42%;
+    left:310px;
     --time:.4s;
     animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
 }
 .page3 .page3-container img.light:nth-child(3){
-    left:59%;
+    left:600px;
     --time:.9s;
     animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
 }
 .page3 .page3-container img.light:nth-child(4){
-    left:91%;
+    left:1040px;
     --time:.8s;
     animation: fade-out calc(var(--time)*1.2) linear infinite alternate;
 }
@@ -222,15 +222,15 @@ section{
 .page3 .page3-container img#workman{
     position: absolute;
     width: 900px;
-    right: -40%;
+    right: -600px;
     bottom: 0;
     z-index: 0;
 }
 .page3 .page3-container .page3-box{
     position: relative;
-    margin-top: 6rem;
-    margin-left:1rem;
-    width: 350px;
+    margin-top: 120px;
+    margin-left:20px;
+    width: 390px;
     height: 510px;
     display: flex;
     justify-content: center;
@@ -242,25 +242,26 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
+    margin-bottom: 0px;
     gap: 30px;
     width: 100%;
     height: 90%;
 }
 .page3 .page3-container .page3-box .page3-content h1{
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: bolder;
 }
 .page3 .page3-container .page3-box .page3-content h2{
-    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
 }
 
 .page3 .page3-container .page3-box .page3-content .result-box{
     display: flex;
     justify-content:space-around;
     width: 80%;
-    height: 100px;
+    height: 100%;
 }
 
 .page3 .page3-container .page3-box .page3-content button{
@@ -271,16 +272,18 @@ section{
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
     font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    min-height: 40px;
+    min-height: 60px;
     min-width: 0;
     outline: none;
-    padding: 16px 24px;
+    padding: 16px 16px;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -309,13 +312,14 @@ section{
     max-height: 50%;
 }
 .page3 .page3-container .page3-box .page3-content .result-message h3{
-    font-size: .9rem;
+    font-size: 22px;
+    font-weight: lighter;
 }
 .page3 .page3-container .page3-box img#stamp{
     position: absolute;
-    top: 1rem;
-    right: 20px;
-    width: 120px;
+    top: 0;
+    right: -20px;
+    width: 150px;
     transform: rotate(20deg);
     z-index: 1;
 }

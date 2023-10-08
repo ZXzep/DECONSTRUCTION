@@ -1,3 +1,85 @@
+/* Desktop 1440 x 900 */
+@media (width < 1441px){
+    .page1-container{
+        gap:50px;
+        padding: 0px;
+        width: 90%;
+    }
+    #page1-hand{
+        right: 200px;
+    }
+    #page1-box-3{
+        left:150px;
+    }
+    .checklist{
+        scale: 100%;
+    }
+    .page3 .page3-container{
+        height:950px;
+    }
+    .page3 .page3-container .page3-box{
+        margin-top: 80px;
+        height:450px;
+        width:360px
+    }
+    .page3 .page3-container .page3-box .page3-content{
+        gap:30px;
+        padding: 0 10px;
+    }
+    .page3 .page3-container .page3-box .page3-content h1{
+        font-size: 32px;
+    }
+    .page3 .page3-container .page3-box .page3-content h2{
+        font-size: 20px;
+    }
+    .page3 .page3-container .page3-box .page3-content .result-message h3{
+        font-size: 20px;
+    }
+    .page3 .page3-container .page3-box .page3-content button{
+        width: 160px;
+        font-size: 18px;
+    }
+    .page3 .page3-container .page3-box  img#stamp{
+        width: 110px;
+        right: 10px;
+        top:10px;
+    }
+    .page3 .page3-container img#frence1{
+        left:-210px;
+        width:650px;
+    }
+    .page3 .page3-container img#frence2{
+        right:-220px;
+        width:650px;
+    }
+    .page3 .page3-container img#workman{
+        width:800px;
+        right:-500px;
+    }
+    .page3 .page3-container img#result2{
+        width: 250px;
+        left:-50px;
+    }
+    .page3 .page3-container img.light{
+        bottom: 180px;
+    }
+    .page3 .page3-container img.light:nth-child(1){
+        left:-80px;
+    }
+    .page3 .page3-container img.light:nth-child(2){
+        left:320px;
+    }
+    .page3 .page3-container img.light:nth-child(3){
+        left:600px;
+    }
+    .page3 .page3-container img.light:nth-child(4){
+        left:1000px;
+    }
+    .page3 .page3-container .page3-box .page3-content .result-box{
+        height: 10%;
+    }
+
+
 /* mobile 390 x 844 iphone14*/
 
 @media (width < 391px){
