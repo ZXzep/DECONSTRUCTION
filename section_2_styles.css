@@ -259,23 +259,217 @@
 
 }
 .page2{
+    background: #E8DCCC;
+    overflow-x: hidden;
     width: 100%;
-    height: 3240px;
+    height: 3540px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1080px 1080px 1080px;
+    grid-template-rows: 1080px 1380px 1080px;
 }
 .page2 .page2_child_1{
+    position: relative;
     border: 5px solid red;
-    background-image: linear-gradient(hsla(0, 0%, 0%, 1) 2%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
+    background-image: linear-gradient(hsla(0, 0%, 0%, 1) 1%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
 }
 .page2 .page2_child_2{
+    position: relative;
     border: 5px solid blue;
     background-color: hsla(34, 39%, 88%, 0);
 }
 .page2 .page2_child_3{
+    position: relative;
+    overflow: hidden;
     border: 5px solid green;
     background-color: hsla(34, 39%, 88%, 0);
+    background-image: linear-gradient(to top, hsla(0, 0%, 0%, 1) 10%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
+}
+#map_svg {
+    position: absolute;
+    width: 1400px;
+    top: 200px;
+    left: 375px;
+}
+#calendar {
+    position: absolute;
+    width: 250px;
+    bottom: 340px;
+    left: 400px;
+}
+#p2_c1_tall {
+    position: absolute;
+    bottom: 750px;
+    left: 400px;
+}
+#p2_c1_tall_2 {
+    position: absolute;
+    bottom: 135px;
+    left: 420px;
+}
+#p2_c1_tall_3 {
+    position: absolute;
+    bottom: 120px;
+    left: 1180px;
+}
+#p2_c1_t1 {
+    font-size: 40px;
+}
+#p2_c1_t2 {
+    font-size: 96px;
+    color: #D83433;
+}
+#p2_c1_t3 {
+    font-size: 32px;
+}
+#p2_c1_t4 {
+    font-size: 20px;
+}
+#p2_c1_t5 {
+    font-size: 24px;
+}
+#p2_c1_t6 {
+    font-size: 16px;
+}
+#roaddigger {
+    position: absolute;
+    bottom: 320px;
+    left: 460px;
+}
+#p2_c2_t1 {
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    bottom: 220px;
+    left: 400px;
+}
+#p2_c2_tall {
+    position: absolute;
+    bottom: 80px;
+    left: 735px;
+}
+#p2_c2_t2 {
+    position: relative;
+    top: -48px;
+    font-size: 20px;
+}
+#p2_c2_t3 {
+    font-size: 20px;
+}
+#p2_c3_t1 {
+    position: absolute;
+    top: 100px;
+    left: 735px;
+    font-size: 20px;
+}
+.age_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 900px;
+    position: relative;
+    left: 400px;
+    top: 295px;
+    gap: 20px;
+}
+.age_img2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+}
+.age_img3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.age_img2-1 {
+    width: 200px;
+}
+.age_img2-2 {
+    width: 180px;
+    z-index: 10;
+}
+.age_img2-3 {
+    width: 250px;
+    z-index: 10;
+}
+.age_img2-4 {
+    width: 300px;
+    z-index: 10;
+}
+.age_img2-5 {
+    width: 170px;
+    z-index: 10;
+}
+#p2_c3_tall-1 {
+    position: absolute;
+    top: 500px;
+    left: 470px;
+    text-align: center;
+}
+#p2_c3_tall-2 {
+    position: absolute;
+    top: 500px;
+    left: 670px;
+    text-align: center;
+}
+#p2_c3_tall-3 {
+    position: absolute;
+    top: 500px;
+    left: 890px;
+    text-align: center;
+}
+#p2_c3_tall-4 {
+    position: absolute;
+    top: 500px;
+    left: 1200px;
+    text-align: center;
+}
+#p2_c3_tall-5 {
+    position: absolute;
+    top: 500px;
+    left: 1460px;
+    text-align: center;
+}
+#p2_c3_t2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+#p2_c3_t3 {
+    font-size: 20px;
+}
+#age_line {
+    position: absolute;
+    width: 1000px;
+    bottom: 390px;
+    left: 500px;
+}
+.drill-box {
+    display: flex;
+    justify-content: center;
+}
+#drill {
+    position: absolute;
+    width: 4000px;
+    bottom: -80px;
+    z-index: 10;
+}
+#road_block1 {
+    position: absolute;
+    width: 500px;
+    left: 215px;
+    bottom: 140px;
+    z-index: 5;
+}
+#road_block2 {
+    position: absolute;
+    width: 500px;
+    right: 72px;
+    bottom: 140px;
+    z-index: 5;
 }
 
 .page3{
