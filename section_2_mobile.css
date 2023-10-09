@@ -13,7 +13,9 @@
 }
 /* mobile 390 x 844 iphone14*/
 @media (361px <= width <  426px){
-
+    *{
+        overflow-x: hidden;
+    }
     .page1 .page1_bottom_child #smoke_1{
         top: 500px;
         left: -50px;
@@ -76,6 +78,11 @@
         scale: 90%;
     }
     #map_svg {
+        width: 600px;
+        top: 550px;
+        left: -120px;
+    }
+    #map_red{
         width: 600px;
         top: 550px;
         left: -120px;
@@ -235,18 +242,28 @@
         flex-direction: column;
         left: 0;
         width: 300px;
+        height: 600px;
         margin-top: 100px;
+    }
+    #water-header {
+       margin-bottom: 20px;
     }
     .water-pipe-box {
         width: 100%;
-        scale: 40%;
+        top:200px;
     }
+    #pipe{
+        width: 500px;
+        left: 230px;
+    }
+    
     #gif-water{
-        top:0;
-        left:0;
+        top: -60px;
+        left: -10px;
+        width: 300px;
     }
     #ground-box{
-        display: none;
+      top:0;
     }
 }
 @media (361px <= width < 391px){
