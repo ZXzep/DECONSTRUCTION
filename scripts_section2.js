@@ -117,5 +117,7 @@ document.addEventListener("scroll",function(){
             is_Blinking = true
             is_fade_out_blink = true
         }
+    }else if(y >= 7300){
+        water.style.height = (y-6800)+"px"
     }
 })
