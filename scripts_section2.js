@@ -22,6 +22,7 @@ document.addEventListener("scroll",function(){
     let calendar = document.querySelector("#calendar")
     let map_svg = document.querySelector("#map_svg")
     let map_red = document.querySelector("#map_red")
+    let water = document.querySelector(".square-sticky")
     console.log(y)
     if(y >= 700 && y < 900){
         page1_textContainer.style.position = "relative"
