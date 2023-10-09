@@ -1,10 +1,14 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans Thai Looped', sans-serif;
 }
 
-
+body{
+    width: 100%;
+    height: 100vh;
+}
 .page1{
     position: relative;
     background-color: black;
@@ -58,46 +62,35 @@
 }
 .page1 .page1_bottom_child{
     position: relative;
-    /* border: 2px solid greenyellow; */
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-image: linear-gradient(black 20%, white, white, white);
 }
 .page1 .page1_bottom_child #smoke_1{
-    /* background-color: black; */
     position: absolute;
-    /* border: 2px solid red; */
     top: 450px;
     z-index: 2;
 }
 .page1 .page1_bottom_child #smoke_2{
-    /* background-color: black; */
     position: absolute;
-    /* border: 2px solid green; */
     top: 625px;
     left: -250px;
     width: 2500px;
     z-index: 4;
 }
 .page1 .page1_bottom_child #smoke_3{
-    /* background-color: black; */
     position: absolute;
-    /* border: 2px solid red; */
     top: 900px;
     z-index: 2;
 }
 .page1 .page1_bottom_child #smoke_4{
-    /* background-color: black; */
     position: absolute;
-    /* border: 2px solid red; */
     top: 950px;
     z-index: 7;
 }
 .page1 .page1_bottom_child #smoke_5{
-
     position: absolute;
-    /* border: 2px solid red; */
     top: 875px;
     left: 750px;
     width: 500px;
@@ -260,7 +253,6 @@
     width: 800px;
     bottom: 300px;
     left: 750px;
-    /* border: 2px solid red; */
     font-size: 20px;
     z-index: 10;
 }
@@ -270,11 +262,9 @@
 .page1 .page1_bottom_child .text_Container .text_Detail_2{
 
 }
-
-/* PAGE 2 STLYE CSS */
 .page2{
+    position: relative;
     background: #E8DCCC;
-    overflow-x: hidden;
     width: 100%;
     height: 3540px;
     display: grid;
@@ -283,23 +273,18 @@
 }
 .page2 .page2_child_1{
     position: relative;
-    border: 5px solid red;
     background-image: linear-gradient(hsla(0, 0%, 0%, 1) 1%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
 }
 .page2 .page2_child_2{
     position: relative;
-    border: 5px solid blue;
     background-color: hsla(34, 39%, 88%, 0);
 }
 #audio{
-    /* border: 2px solid red; */
     height: 500px;
     width: 100%;
 }
 .page2 .page2_child_3{
     position: relative;
-    overflow: hidden;
-    border: 5px solid green;
     background-color: hsla(34, 39%, 88%, 0);
     background-image: linear-gradient(to top, hsla(0, 0%, 0%, 1) 10%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
 }
@@ -397,7 +382,7 @@
 }
 #p2_c1_tall {
     position: absolute;
-    bottom: 750px;
+    top:100px;
     left: 400px;
 }
 #p2_c1_tall_2 {
@@ -436,7 +421,7 @@
 }
 #p2_c2_t1 {
     position: absolute;
-    color: #D83433;
+    color: red;
     font-size: 30px;
     font-weight: bold;
     bottom: 220px;
@@ -460,13 +445,6 @@
     top: 100px;
     left: 735px;
     font-size: 20px;
-}
-#audio_construction {
-    position: absolute;
-    color: #D83433;
-    top: 285px;
-    left: 1045px;
-    font-size: 16px;
 }
 .age_img {
     display: grid;
@@ -585,11 +563,14 @@
 }
 .drill-box {
     display: flex;
+    position: relative;
+    height: 700px;
+    bottom: -200px;
     justify-content: center;
 }
 #drill {
     position: absolute;
-    width: 4000px;
+    width: 100%;
     bottom: -80px;
     z-index: 20;
 }
@@ -608,93 +589,130 @@
     z-index: 5;
 }
 
-/* END PAGE 2 STLYE CSS */
-
 .page3{
     position: relative;
     /* background-color: black; */
     background: linear-gradient(180deg, #373234 0%, #373234 15%, #d83433 30%, #d83433 100%);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2160px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
     height: 3240px;
     overflow: hidden;
 }
 /* สี gradient ของ page3 */
 /* ##373234 */
 /* ##d83433 */
+.page3-text-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 300px;
+    left: 100px;
+    width: 1200px;
+    height: 500px;
+}
 #water-header{
     color: #D83433;
-    position: absolute;
-    top: 350px;
-    left: 500px;
     font-size: 30px;
     font-weight: bold;
 }
 #water-text{
     color: white;
-    position: absolute;
     font-size: 20px;
-    top: 350px;
-    left: 800px;
-    width: 906px;
+}
+.water-pipe-box{
+    position: relative;
+    width: 100%;
+    top:-120px;
+    height: 500px;
 }
 #gif-water{
     position: absolute;
-    top: 590px;
-    right: 740px;
+    top:-60px;
+    left: 650px;
     transform: scale(0.8);
-}
-#pipe-box{
-    display: flex;
-    justify-content: center;
 }
 #pipe{
     position: absolute;
-    right: -100px;
-    top: 670px;
+    right: -150px;
     transform: scale(1.4);
 }
 #ground-box{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    top:-500px;
     display: flex;
     justify-content: center;
 }
 #ground{
     position: absolute;
-    bottom: 560px;
-    width: 1920px;
-}
-#water-box{
-    display: flex;
-    justify-content: center;
+    
 }
 #water{
     position: absolute;
-    bottom: 200px;
-    transform: scale(0.8);
+    
+}
+.page3-text-bottom-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 100px;
+    width: 1200px;
+    height: 500px;
 }
 #earth-header{
     color: #D83433;
-    position: absolute;
-    top: 2100px;
-    left: 500px;
     font-size: 30px;
     font-weight: bold;
     z-index: 100;
 }
 #earth-text{
     color: white;
-    position: absolute;
     font-size: 20px;
-    top: 2100px;
-    left: 800px;
     width: 906px;
     z-index: 100;
 }
+.square-sticky{
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    height: 300px;
+    background: rgb(240, 15, 15);
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 55%,
+			70% 60%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
 #black-box{
     width: 100%;
     height: 1908px;
@@ -722,15 +740,24 @@
     color: white;
     position: absolute;
     width: 100%;
+    display: flex;
+    justify-content: center;
     bottom: 100px;
 }
 #end-button{
+    color:white;
+    cursor: pointer;
     width: fit-content;
     height: fit-content;
     background-color: #373234;
     border-radius: 30px;
+    border: none;
     padding: 20px;
     font-size: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+#end-button:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
 }
