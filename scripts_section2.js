@@ -17,6 +17,9 @@ document.addEventListener("scroll",function(){
     let y = parseInt(document.body.dataset.y)
     let text_Change1 = document.querySelector(".page1_text_change1")
     let text_Change2 = document.querySelector(".page1_text_change2")
+    let calendar = document.querySelector("#calendar")
+    let map_svg = document.querySelector("#map_svg")
+    console.log(y)
     if(y >= 700 && y < 900){
         page1_textContainer.style.position = "relative"
         page1_textContainer.style.top = "700px"
@@ -76,7 +79,7 @@ document.addEventListener("scroll",function(){
             is_Sun4 = true
         }
         is_Sun3 = false
-    }else if(y >= 1100){
+    }else if(y >= 1100 && y < 3000){
         building3.style.opacity = "1"
         building3.style.top = "800px"
         if(is_Sun3 == false){
@@ -84,5 +87,14 @@ document.addEventListener("scroll",function(){
             building3.addEventListener("webkitAnimationEnd", callback_nextPage(building3), false);
             is_Sun3 = true
         }
+        calendar.style.left = "300px"
+        calendar.style.opacity = "0"
+        map_svg.style.left = "475px"
+        map_svg.style.opacity = "0"
+    }else if(y >= 3000){
+        calendar.style.left = "400px"
+        calendar.style.opacity = "1"
+        map_svg.style.left = "375px"
+        map_svg.style.opacity = "1"
     }
 })
