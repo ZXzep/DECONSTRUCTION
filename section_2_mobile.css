@@ -120,6 +120,11 @@
         left: 25px;
         font-size: 18px;
     }
+    #audio_construction {
+        top: 580px;
+        left: 235px;
+        font-size: 12px;
+    }
     .age_img {
         display: grid;
         grid-template-columns: 1fr;
