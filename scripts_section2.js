@@ -2,13 +2,15 @@ let building1 = document.querySelector("#building_1")
 let building2 = document.querySelector("#building_2")
 let building3 = document.querySelector("#building_3")
 let building4 = document.querySelector("#building_4")
-let is_Sun1 = false
-let is_Sun2 = false
-let is_Sun3 = false
-let is_Sun4 = false
-function callback_nextPage(el) {
+let is_Shake1 = false
+let is_Shake2 = false
+let is_Shake3 = false
+let is_Shake4 = false
+let is_Blinking = false
+let is_fade_out_blink = false
+function callback_nextPage(el, anim_class) {
     return function(){
-        el.classList.remove('structure_building'); 
+        el.classList.remove(anim_class);
     }
 }
 document.addEventListener("scroll",function(){
@@ -19,6 +21,7 @@ document.addEventListener("scroll",function(){
     let text_Change2 = document.querySelector(".page1_text_change2")
     let calendar = document.querySelector("#calendar")
     let map_svg = document.querySelector("#map_svg")
+    let map_red = document.querySelector("#map_red")
     console.log(y)
     if(y >= 700 && y < 900){
         page1_textContainer.style.position = "relative"
@@ -34,14 +37,14 @@ document.addEventListener("scroll",function(){
         text_Change1.style.width = "60px"
         building1.style.opacity = "1"
         building1.style.top = "220px"
-        if(is_Sun1 == false){
+        if(is_Shake1 == false){
             building1.classList.toggle("structure_building");
-            building1.addEventListener("webkitAnimationEnd", callback_nextPage(building1), false);
-            is_Sun1 = true
+            building1.addEventListener("webkitAnimationEnd", callback_nextPage(building1, "structure_building"), false);
+            is_Shake1 = true
         }
         building2.style.opacity = "0"
         building2.style.top = "710px"
-        is_Sun2 = false
+        is_Shake2 = false
     }else if(y < 700){
         page1_textContainer.style.position = "fixed"
         page1_textContainer.style.top = "auto"
@@ -56,45 +59,63 @@ document.addEventListener("scroll",function(){
         text_Change1.style.width = "80px"
         building1.style.opacity = "0"
         building1.style.top = "280px"
-        is_Sun1 = false
+        is_Shake1 = false
     }else if(y >= 900 && y < 1000){
         building2.style.opacity = "1"
         building2.style.top = "650px"
         building4.style.opacity = "0"
         building4.style.top = "810px"
-        if(is_Sun2 == false){
+        if(is_Shake2 == false){
             building2.classList.toggle("structure_building");
-            building2.addEventListener("webkitAnimationEnd", callback_nextPage(building2), false);
-            is_Sun2 = true
+            building2.addEventListener("webkitAnimationEnd", callback_nextPage(building2, "structure_building"), false);
+            is_Shake2 = true
         }
-        is_Sun4 = false
+        is_Shake4 = false
     }else if(y >= 1000 && y < 1100){
         building4.style.opacity = "1"
         building4.style.top = "750px"
         building3.style.opacity = "0"
         building3.style.top = "860px"
-        if(is_Sun4 == false){
+        if(is_Shake4 == false){
             building4.classList.toggle("structure_building");
-            building4.addEventListener("webkitAnimationEnd", callback_nextPage(building4), false);
-            is_Sun4 = true
+            building4.addEventListener("webkitAnimationEnd", callback_nextPage(building4, "structure_building"), false);
+            is_Shake4 = true
         }
-        is_Sun3 = false
+        is_Shake3 = false
     }else if(y >= 1100 && y < 3000){
         building3.style.opacity = "1"
         building3.style.top = "800px"
-        if(is_Sun3 == false){
+        if(is_Shake3 == false){
             building3.classList.toggle("structure_building");
-            building3.addEventListener("webkitAnimationEnd", callback_nextPage(building3), false);
-            is_Sun3 = true
+            building3.addEventListener("webkitAnimationEnd", callback_nextPage(building3, "structure_building"), false);
+            is_Shake3 = true
         }
-        calendar.style.left = "300px"
-        calendar.style.opacity = "0"
-        map_svg.style.left = "475px"
-        map_svg.style.opacity = "0"
+        if(is_fade_out_blink == true){
+            is_fade_out_blink = false
+            map_red.classList.toggle("blinkingOut");
+            map_red.addEventListener("webkitAnimationEnd", callback_nextPage(map_red, "blinkingOut"), false);
+            map_svg.classList.toggle("blinkingOut");
+            map_svg.addEventListener("webkitAnimationEnd", callback_nextPage(map_svg, "blinkingOut"), false);
+            calendar.classList.toggle("calendarOut");
+            calendar.addEventListener("webkitAnimationEnd", callback_nextPage(calendar, "calendarOut"), false);
+            calendar.style.opacity = "0"
+            map_svg.style.opacity = "0"
+            map_red.style.opacity = "0"
+        }
+        is_Blinking = false
     }else if(y >= 3000){
-        calendar.style.left = "400px"
-        calendar.style.opacity = "1"
-        map_svg.style.left = "375px"
-        map_svg.style.opacity = "1"
+        if(is_Blinking == false){
+            map_red.classList.toggle("blinking");
+            map_red.addEventListener("webkitAnimationEnd", callback_nextPage(map_red, "blinking"), false);
+            map_svg.classList.toggle("blinkingIn");
+            map_svg.addEventListener("webkitAnimationEnd", callback_nextPage(map_svg, "blinkingIn"), false);
+            calendar.classList.toggle("calendarIn");
+            calendar.addEventListener("webkitAnimationEnd", callback_nextPage(calendar, "calendarIn"), false);
+            map_svg.style.opacity = "1"
+            map_red.style.opacity = "1"
+            calendar.style.opacity = "1"
+            is_Blinking = true
+            is_fade_out_blink = true
+        }
     }
 })
