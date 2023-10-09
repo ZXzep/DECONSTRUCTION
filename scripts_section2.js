@@ -103,7 +103,7 @@ document.addEventListener("scroll",function(){
             map_red.style.opacity = "0"
         }
         is_Blinking = false
-    }else if(y >= 3000){
+    }else if(y >= 3000 && y < 7300){
         if(is_Blinking == false){
             map_red.classList.toggle("blinking");
             map_red.addEventListener("webkitAnimationEnd", callback_nextPage(map_red, "blinking"), false);
