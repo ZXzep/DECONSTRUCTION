@@ -192,7 +192,7 @@
 }
 .crane_2_grp{
     position: relative;
-    transform-origin: 75% 0 0;
+    transform-origin: 90% 0 0;
     animation: rotate_crane2 infinite 5s 2s linear;
     z-index: 8;
 }
