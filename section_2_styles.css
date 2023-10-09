@@ -209,7 +209,7 @@
     0%{transform: rotate3d(0, 1, 0, 0deg);}
     50%{transform: rotate3d(0, 1, 0, -35deg);}
     100%{transform: rotate3d(0, 1, 0, 0deg);}
-} 
+}
 
 .page1 .page1_bottom_child #crane_2_leg{
     position: relative;
@@ -231,12 +231,12 @@
     0%{transform: rotate3d(0, 1, 0, 0deg);}
     50%{transform: rotate3d(0, 1, 0, -70deg);}
     100%{transform: rotate3d(0, 1, 0, 0deg);}
-} 
+}
 @keyframes rotate_crane_leg{
     0%{transform: translatex(0px);}
     50%{transform: translatex(-22px);}
     100%{transform: translatex(0px);}
-} 
+}
 
 .page1 .page1_bottom_child #SmokeSkull{
     position: relative;
@@ -287,6 +287,11 @@
     position: relative;
     border: 5px solid blue;
     background-color: hsla(34, 39%, 88%, 0);
+}
+#audio{
+    /* border: 2px solid red; */
+    height: 500px;
+    width: 100%;
 }
 .page2 .page2_child_3{
     position: relative;
