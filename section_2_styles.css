@@ -209,7 +209,7 @@
     0%{transform: rotate3d(0, 1, 0, 0deg);}
     50%{transform: rotate3d(0, 1, 0, -35deg);}
     100%{transform: rotate3d(0, 1, 0, 0deg);}
-} 
+}
 
 .page1 .page1_bottom_child #crane_2_leg{
     position: relative;
@@ -231,12 +231,12 @@
     0%{transform: rotate3d(0, 1, 0, 0deg);}
     50%{transform: rotate3d(0, 1, 0, -70deg);}
     100%{transform: rotate3d(0, 1, 0, 0deg);}
-} 
+}
 @keyframes rotate_crane_leg{
     0%{transform: translatex(0px);}
     50%{transform: translatex(-22px);}
     100%{transform: translatex(0px);}
-} 
+}
 
 .page1 .page1_bottom_child #SmokeSkull{
     position: relative;
@@ -288,6 +288,11 @@
     border: 5px solid blue;
     background-color: hsla(34, 39%, 88%, 0);
 }
+#audio{
+    /* border: 2px solid red; */
+    height: 500px;
+    width: 100%;
+}
 .page2 .page2_child_3{
     position: relative;
     overflow: hidden;
@@ -299,13 +304,19 @@
     position: absolute;
     width: 1400px;
     top: 200px;
-    left: 375px;
+/* left defualt is 375px */
+    left: 475px;
+    transition: linear .5s;
+    opacity: 0;
 }
 #calendar {
     position: absolute;
     width: 250px;
     bottom: 340px;
-    left: 400px;
+/* left defualt is 400px */
+    left: 300px;
+    opacity: 0;
+    transition: linear .5s;
 }
 #p2_c1_tall {
     position: absolute;
@@ -415,6 +426,36 @@
     width: 170px;
     z-index: 10;
 }
+.age_img2-1:hover{
+    animation: age_img_shake .5s forwards;
+}
+.age_img2-2:hover{
+    animation: age_img_shake .5s forwards;
+}
+.age_img2-3:hover{
+    animation: age_img_shake .5s forwards;
+}
+.age_img2-4:hover{
+    animation: age_img_shake .5s forwards;
+}
+.age_img2-5:hover{
+    animation: age_img_shake .5s forwards;
+}
+
+@keyframes age_img_shake {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(5px);}
+    20%{transform: translateX(-5px);}
+    30%{transform: translateX(5px);}
+    40%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    60%{transform: translateX(-5px);}
+    70%{transform: translateX(5px);}
+    80%{transform: translateX(-5px);}
+    90%{transform: translateX(5px);}
+    100%{transform: translateX(0px);}
+}
+
 #p2_c3_tall-1 {
     position: absolute;
     top: 500px;
