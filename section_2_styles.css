@@ -674,6 +674,64 @@ body{
     width: 906px;
     z-index: 100;
 }
+.wave-box{
+    position: absolute;
+    height: 5%;
+    width:100%;
+    top:260px;
+    z-index: 0;
+}
+.wave {
+    
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    transform: translate3d(0, 0, 0);
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    -webkit-filter: hue-rotate(230deg) saturate(70) brightness(23%);;
+  }
+  .wave:nth-of-type(1) {
+    position: absolute;
+}
+.wave:nth-of-type(2) {
+    position: absolute;
+    top: -175px;
+    transform: translate3d(0, 0, 0);
+    animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+.wave:nth-of-type(3) {
+    position: absolute;
+    top: 155px;
+    transform:scaleY(-1);
+    animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    opacity: 1;
+}
+.wave:nth-of-type(4) {
+    position: absolute;
+    top: 130px;
+    transform:scaleY(-1);
+    animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    opacity: 1;
+}
+@keyframes wave {
+    0% {
+    margin-left: 0;
+    }
+    100% {
+    margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+    transform: translate3d(0,-25px,0);
+    }
+    50% {
+    transform: translate3d(0,5px,0);
+    }
+}
 .square-sticky{
     position: absolute;
     /* bottom: 30px; */
