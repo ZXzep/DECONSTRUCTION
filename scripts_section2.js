@@ -9,7 +9,6 @@ let is_Shake4 = false
 let is_Blinking = false
 let is_fade_out_blink = false
 let page1_textContainer = document.querySelector(".page1_textContainer");
-console.log("ss")
 function callback_nextPage(el, anim_class) {
     return function(){
         el.classList.remove(anim_class);
@@ -23,7 +22,9 @@ document.addEventListener("scroll",function(){
     let calendar = document.querySelector("#calendar")
     let map_svg = document.querySelector("#map_svg")
     let map_red = document.querySelector("#map_red")
-    let water = document.querySelector(".square-sticky")
+    let water_wave = document.querySelector(".water-wave")
+    let wave1 = document.getElementsByClassName("wave")[2]
+    let wave2 = document.getElementsByClassName("wave")[3]
     console.log(y)
     if(y >= 700 && y < 900){
         page1_textContainer.style.position = "relative"
@@ -105,7 +106,7 @@ document.addEventListener("scroll",function(){
             map_red.style.opacity = "0"
         }
         is_Blinking = false
-    }else if(y >= 3000 && y < 7300){
+    }else if(y >= 3000 && y < 7500){
         if(is_Blinking == false){
             map_red.classList.toggle("blinking");
             map_red.addEventListener("webkitAnimationEnd", callback_nextPage(map_red, "blinking"), false);
@@ -119,8 +120,9 @@ document.addEventListener("scroll",function(){
             is_Blinking = true
             is_fade_out_blink = true
         }
-    }else if(y >= 7300){
-        water.style.height = (y-6800)+"px"
+    }else if(y >= 7500){
+        water_wave.style.height = (y+162-7500)+"px"
+        wave1.style.top = (y-7500+155)+"px"
+        wave2.style.top = (y-7500+130)+"px"
     }
 })
-
