@@ -270,6 +270,8 @@
 .page1 .page1_bottom_child .text_Container .text_Detail_2{
 
 }
+
+/* PAGE 2 STLYE CSS */
 .page2{
     background: #E8DCCC;
     overflow-x: hidden;
@@ -434,7 +436,7 @@
 }
 #p2_c2_t1 {
     position: absolute;
-    color: red;
+    color: #D83433;
     font-size: 30px;
     font-weight: bold;
     bottom: 220px;
@@ -598,6 +600,8 @@
     bottom: 140px;
     z-index: 5;
 }
+
+/* END PAGE 2 STLYE CSS */
 
 .page3{
     position: relative;
