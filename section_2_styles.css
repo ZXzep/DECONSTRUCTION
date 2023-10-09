@@ -342,7 +342,7 @@
 }
 .blinkingOut{
     -webkit-animation-name: blinkingOut;
-    -webkit-animation-duration: .75s;
+    -webkit-animation-duration: .25s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
@@ -380,7 +380,7 @@
 }
 .calendarOut{
     -webkit-animation-name: calendarOut;
-    -webkit-animation-duration: .75s;
+    -webkit-animation-duration: .25s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
