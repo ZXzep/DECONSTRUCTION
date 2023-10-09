@@ -8,13 +8,14 @@ let is_Shake3 = false
 let is_Shake4 = false
 let is_Blinking = false
 let is_fade_out_blink = false
+let page1_textContainer = document.querySelector(".page1_textContainer");
+console.log("ss")
 function callback_nextPage(el, anim_class) {
     return function(){
         el.classList.remove(anim_class);
     }
 }
 document.addEventListener("scroll",function(){
-    let page1_textContainer = document.querySelector(".page1_textContainer");
     document.body.dataset.y = window.scrollY
     let y = parseInt(document.body.dataset.y)
     let text_Change1 = document.querySelector(".page1_text_change1")
@@ -122,3 +123,4 @@ document.addEventListener("scroll",function(){
         water.style.height = (y-6800)+"px"
     }
 })
+

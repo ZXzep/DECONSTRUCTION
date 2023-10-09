@@ -13,6 +13,7 @@
 }
 /* mobile 390 x 844 iphone14*/
 @media (361px <= width <  426px){
+
     .page1 .page1_bottom_child #smoke_1{
         top: 500px;
         left: -50px;
@@ -53,13 +54,199 @@
         font-size: 15px;
     }
     .page1 .page1_bottom_child .text_Container .text_Detail_1{
-        margin-bottom: 75px;
+        margin-bottom: 20px;
     }
     .page1 .page1_bottom_child #construction_shadow{
         position: absolute;
         bottom: 0px;
         z-index: 9;
         width: 100%;
+    }
+    /* PAGE 2 STYLE CSS MOBILE */
+    .page2{
+        height: 3240px;
+        grid-template-rows: 1080px 1080px 1080px;
+    }
+    .page2 .page2_child_3{
+        background-image: linear-gradient(to top, hsla(0, 0%, 0%, 1) 1%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
+    }
+    #p2_c1_tall {
+        bottom: 700px;
+        left: 20px;
+        scale: 90%;
+    }
+    #map_svg {
+        width: 600px;
+        top: 550px;
+        left: -120px;
+    }
+    #calendar {
+        width: 180px;
+        bottom: 490px;
+        left: 40px;
+    }
+    #p2_c1_tall_2 {
+        bottom: 160px;
+        left: 20px;
+        scale: 80%;
+    }
+    #p2_c1_tall_3 {
+        bottom: 100px;
+        left: 20px;
+        scale: 80%;
+    }
+    #audio{
+        position: relative;
+        top: -50px;
+        height: 275px;
+        
+    }
+    #roaddigger {
+        position: absolute;
+        width: 380px;
+        bottom: 600px;
+        left: 0px;
+    }
+    #p2_c2_t1 {
+        color: #D83433;
+        font-size: 24px;
+        bottom: 535px;
+        left: 32px;
+    }
+    #p2_c2_tall {
+        left: 30px;
+    }
+    #p2_c2_t2 {
+        font-size: 18px;
+    }
+    #p2_c2_t3 {
+        font-size: 18px;
+    }
+    #p2_c3_t1 {
+        top: 75px;
+        left: 25px;
+        font-size: 18px;
+    }
+    #audio_construction {
+        top: 580px;
+        left: 235px;
+        font-size: 12px;
+    }
+    .age_img {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 175px;
+        position: relative;
+        left: 210px;
+        top: 255px;
+        gap: 40px;
+    }
+    .age_img2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .age_img3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .age_img2-1 {
+        width: 110px;
+    }
+    .age_img2-2 {
+        width: 90px;
+        z-index: 10;
+    }
+    .age_img2-3 {
+        width: 130px;
+        z-index: 10;
+    }
+    .age_img2-4 {
+        width: 140px;
+        z-index: 10;
+    }
+    .age_img2-5 {
+        width: 100px;
+        z-index: 10;
+    }
+    #p2_c3_tall-1 {
+        position: absolute;
+        top: 295px;
+        left: 77.5px;
+        text-align: center;
+    }
+    #p2_c3_tall-2 {
+        position: absolute;
+        top: 395px;
+        left: 60px;
+        text-align: center;
+    }
+    #p2_c3_tall-3 {
+        position: absolute;
+        top: 510px;
+        left: 55px;
+        text-align: center;
+    }
+    #p2_c3_tall-4 {
+        position: absolute;
+        top: 625px;
+        left: 65px;
+        text-align: center;
+    }
+    #p2_c3_tall-5 {
+        position: absolute;
+        top: 725px;
+        left: 75px;
+        text-align: center;
+    }
+    #age_line {
+        width: 550px;
+        bottom: 435px;
+        left: -70px;
+        transform: rotate(90deg);
+    }
+    #drill {
+        width: 1800px;
+        top: -120px;
+        left: -746px;
+        scale: 50%;
+    }
+    #road_block1 {
+        width: 150px;
+        left: -15px;
+        bottom: 65px;
+        z-index: 21;
+    }
+    #road_block2 {
+        width: 150px;
+        left: 250px;
+        bottom: 65px;
+        z-index: 21;
+    }
+    /* END PAGE 2 STYLE CSS MOBILE */
+
+    /* PAGE 3 STYLE CSS MOBILE */
+    .page3-text-box{
+        flex-direction: column;
+        left: 0;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .water-pipe-box {
+        width: 100%;
+        scale: 40%;
+    }
+    #gif-water{
+        top:0;
+        left:0;
+    }
+    #ground-box{
+        display: none;
     }
 }
 @media (361px <= width < 391px){
@@ -68,4 +255,5 @@
 @media (width < 361px){
 
 }
+
 
