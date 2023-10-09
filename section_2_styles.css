@@ -466,7 +466,7 @@
     position: absolute;
     width: 4000px;
     bottom: -80px;
-    z-index: 10;
+    z-index: 20;
 }
 #road_block1 {
     position: absolute;
@@ -486,7 +486,7 @@
 .page3{
     position: relative;
     /* background-color: black; */
-    background: linear-gradient(180deg, #373234 0%, #d83433 100%);
+    background: linear-gradient(180deg, #373234 0%, #373234 15%, #d83433 30%, #d83433 100%);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2160px;
@@ -495,11 +495,115 @@
     width: 100%;
     height: 100%;
     height: 3240px;
+    overflow: hidden;
 }
 /* สี gradient ของ page3 */
 /* ##373234 */
 /* ##d83433 */
+#water-header{
+    color: #D83433;
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#water-text{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 350px;
+    left: 800px;
+    width: 906px;
+}
+#gif-water{
+    position: absolute;
+    top: 590px;
+    right: 740px;
+    transform: scale(0.8);
+}
+#pipe-box{
+    display: flex;
+    justify-content: center;
+}
+#pipe{
+    position: absolute;
+    right: -100px;
+    top: 670px;
+    transform: scale(1.4);
+}
+#ground-box{
+    display: flex;
+    justify-content: center;
+}
 #ground{
     position: absolute;
+    bottom: 560px;
+    width: 1920px;
+}
+#water-box{
+    display: flex;
+    justify-content: center;
+}
+#water{
+    position: absolute;
+    bottom: 200px;
+    transform: scale(0.8);
+}
+#earth-header{
+    color: #D83433;
+    position: absolute;
+    top: 2100px;
+    left: 500px;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 100;
+}
+#earth-text{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 2100px;
+    left: 800px;
+    width: 906px;
+    z-index: 100;
+}
+#black-box{
+    width: 100%;
+    height: 1908px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%);
+    position: absolute;
     bottom: 0;
+}
+#end-text{
+    color: white;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 420px;
+}
+#end-top-text{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+#end-bot-text{
+    color: #D83433;
+    font-size: 25px;
+}
+#end-bottom{
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+#end-button{
+    width: fit-content;
+    height: fit-content;
+    background-color: #373234;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
