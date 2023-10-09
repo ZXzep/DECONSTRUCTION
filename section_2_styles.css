@@ -485,7 +485,8 @@
 
 .page3{
     position: relative;
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(180deg, #373234 0%, #d83433 100%);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2160px;
@@ -498,3 +499,7 @@
 /* สี gradient ของ page3 */
 /* ##373234 */
 /* ##d83433 */
+#ground{
+    position: absolute;
+    bottom: 0;
+}
