@@ -629,6 +629,7 @@
     width: 100%;
     top:-120px;
     height: 500px;
+    overflow: hidden;
 }
 #gif-water{
     position: absolute;
