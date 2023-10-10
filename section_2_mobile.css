@@ -13,9 +13,6 @@
 }
 /* mobile 390 x 844 iphone14*/
 @media (361px <= width <  426px){
-    *{
-        overflow-x: hidden;
-    }
     .page1 .page1_bottom_child #smoke_1{
         top: 500px;
         left: -50px;
@@ -69,6 +66,9 @@
         height: 3240px;
         grid-template-rows: 1080px 1080px 1080px;
     }
+    .page2 .page2_child_1{
+        overflow: hidden;
+    }
     .page2 .page2_child_3{
         background-image: linear-gradient(to top, hsla(0, 0%, 0%, 1) 1%, hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0), hsla(34, 39%, 88%, 0));
     }
@@ -81,11 +81,13 @@
         width: 600px;
         top: 550px;
         left: -120px;
+       
     }
     #map_red{
         width: 600px;
         top: 550px;
         left: -120px;
+        
     }
     #calendar {
         width: 180px;
@@ -211,11 +213,17 @@
         left: 75px;
         text-align: center;
     }
+    #p2_c1_t6{
+        font-size:18px;
+    }
     #age_line {
         width: 550px;
         bottom: 435px;
         left: -70px;
         transform: rotate(90deg);
+    }
+    .drill-box{
+        overflow-x: hidden;
     }
     #drill {
         width: 1800px;
@@ -231,7 +239,7 @@
     }
     #road_block2 {
         width: 150px;
-        left: 250px;
+        left: 240px;
         bottom: 65px;
         z-index: 21;
     }
@@ -239,6 +247,7 @@
 
     /* PAGE 3 STYLE CSS MOBILE */
     .page3-text-box{
+        display: flex;
         flex-direction: column;
         left: 0;
         width: 300px;
@@ -251,19 +260,34 @@
     .water-pipe-box {
         width: 100%;
         top:200px;
+        height: 400px;
+        overflow: hidden;
     }
     #pipe{
-        width: 500px;
-        left: 230px;
+        width: 430px;
+        left: 200px;
     }
     
     #gif-water{
-        top: -60px;
-        left: -10px;
-        width: 300px;
+        top: -50px;
+        left: -40px;
+        width: 280px;
     }
     #ground-box{
-      top:0;
+        top:-170px;
+    }
+    .page3-text-bottom-box{
+        width: 100%;
+        flex-direction: column;
+        height: 300px;
+        padding: 30px;
+        left:0;
+    }
+    #earth-header{
+
+    }
+    #earth-text{
+        width:100%
     }
 }
 @media (361px <= width < 391px){
