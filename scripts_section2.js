@@ -25,7 +25,6 @@ document.addEventListener("scroll",function(){
     let water_wave = document.querySelector(".water-wave")
     let wave1 = document.getElementsByClassName("wave")[2]
     let wave2 = document.getElementsByClassName("wave")[3]
-    console.log(y)
     if(y >= 700 && y < 900){
         page1_textContainer.style.position = "relative"
         page1_textContainer.style.top = "700px"
@@ -94,6 +93,7 @@ document.addEventListener("scroll",function(){
             is_Shake3 = true
         }
         if(is_fade_out_blink == true){
+            console.log("s")
             is_fade_out_blink = false
             map_red.classList.toggle("blinkingOut");
             map_red.addEventListener("webkitAnimationEnd", callback_nextPage(map_red, "blinkingOut"), false);

@@ -33,7 +33,7 @@
     position: relative;
     width: 500px;
     height: 200px;
-    /* border: 2px solid white; */
+    background: transparent;
     color: white;
     text-align: center;
     justify-content: center;
@@ -290,7 +290,6 @@
     top: 200px;
 /* left defualt is 375px */
     left: 375px;
-    transition: linear .5s;
     opacity: 0;
 }
 #map_red {
@@ -299,7 +298,6 @@
     top: 200px;
 /* left defualt is 375px */
     left: 375px;
-    transition: linear .5s;
     opacity: 0;
 }
 .blinking{
@@ -308,24 +306,25 @@
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
+    
 }
 @keyframes blinking {
     0%{opacity: 1; transform: translateX(100px);}
     10%{opacity: 0;}
-    15%{transform: translatex(0px);}
+    15%{opacity: 0;transform: translatex(0px);}
     20%{opacity: 1;}
     30%{opacity: 0;}
-    40%{opacity: 1;}
-    50%{opacity: 0;}
-    60%{opacity: 1;}
+    40%{opacity: 0;}
+    50%{opacity: 1;}
+    60%{opacity: 0;}
     70%{opacity: 0;}
     80%{opacity: 1;}
     90%{opacity: 0;}
-    100%{opacity: 1;}
+    100%{opacity: 0;}
 }
 .blinkingOut{
     -webkit-animation-name: blinkingOut;
-    -webkit-animation-duration: .25s;
+    -webkit-animation-duration: 0.25s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
@@ -693,7 +692,6 @@
     top: -5px;
 }
 .wave {
-    
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);
     top: -198px;
     width: 6400px;
@@ -704,11 +702,11 @@
   }
 .wave:nth-of-type(2) {
     position: absolute;
-    top:-175px;
+    top:-150px;
 }
 .wave:nth-of-type(3) {
     position: absolute;
-    top: -175px;
+    top: -140px;
     transform: translate3d(0, 0, 0);
     animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
     opacity: 1;
