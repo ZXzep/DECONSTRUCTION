@@ -57,10 +57,17 @@ body{
     font-weight:600;
 }
 
+
+
+
+
+
+
+
 .sec4-page2-container{
     position: relative;
     width: 100%;
-    height: 5200px;
+    height: 6000px;
     overflow: hidden;
 }
 .sec4-page2-container .page2-box{
@@ -224,8 +231,80 @@ body{
     transform: rotate(-50deg);
     z-index: -1;
 }
+.sec4-page2-container .page2-footer{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page2-footer .footer-1{
+    width: 1200px;
+}
+.page2-footer .footer-1 p{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    color:white;
+    text-align: center;
+}
+.page2-footer .footer-2{
+    margin-top: 130px;
+    width: 1200px;
+}
+.page2-footer .footer-2 p{
+    font-size: 60px;
+    text-align: center;
+}
+.page2-footer .footer-2 label{
+    color: red;
+}
+.page2-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top:0;
+}
+.page2-background img{
+    position: absolute;
+}
+.page2-background img#worker{
+    width: 1400px;
+    left:200px;
+    bottom: 0;
+    z-index: 0;
+}
+.page2-background img#lb-building{
+    width: 300px;
+    bottom: 0;
+    z-index: 1;
+}
+.page2-background img#rb-building{
+    width: 500px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.page2-background img#lb-flower-buidling{
+    width: 300px;
+    bottom: 200px;
+    left:100px;
+}
+
+
+
+.sec4-page3-container{
+    
+}
+
+
+
+
 .sec4-background{
-    background:linear-gradient(#e8dccc,#e8dccc,black,black,black,rgb(255, 0, 0) ,black,black,black ) ;
+    background:linear-gradient(#e8dccc,#e8dccc,black,black,black,rgb(255, 0, 0) ,black,black,#e8dccc ,#e8dccc) ;
     position: absolute;
     width: 100%;
     height: 100%;
