@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+
+/* กานต์ */
+.page_1{
+    width: 100%;
+    height: 3240px;
+    display: grid;
+    grid-template-rows: 2160px 1080px;
+    background-image: linear-gradient(to bottom, hsla(34, 38%, 85%, 1)50%, black, black, black);
+    overflow: hidden;
+}
+/* child_1 */
+.page_1 .page1_child1{
+    /* background-color: rgb(235, 235, 235); */
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/* child_1_top */
+.page_1 .page1_child1 .top{
+    position: relative;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_1 .page1_child1 .top #logo{
+    height: 300px;
+}
+.page_1 .page1_child1 .top #pipe1{
+    position: absolute;
+    height: 300px;
+    left: 200px;
+    top: 0;
+    transform: scaleY(-1);
+}
+/* child_1_bottom */
+.page_1 .page1_child1 .bottom{
+    position: relative;
+    /* border: 2px solid green; */
+}
+.page_1 .page1_child1 .bottom #building_page1{
+    position: absolute;
+    width: 300px;
+    right: 400px;
+    top: 220px;
+}
+.page_1 .page1_child1 .bottom #construct_page1{
+    position: absolute;
+    width: 350px;
+    left: 0px;
+    top: 120px;
+    z-index: 1;
+}
+.page_1 .page1_child1 .bottom #flower_page1{
+    position: absolute;
+    width: 200px;
+    left: 30px;
+    top: 250px;
+    transform: scaleX(-1);
+    opacity: 0.7;
+    z-index: 0;
+}
+.page_1 .page1_child1 .bottom #crane_page1{
+    position: absolute;
+    width: 300px;
+    right: 0px;
+    top: -50px;
+}
+.page_1 .page1_child1 .bottom .craneleg{
+    position: absolute;
+
+    right: 87px;
+    width: 47px;
+    z-index: 4;
+}
+.page_1 .page1_child1 .bottom #cranelegpos_1{
+    top: 550px;
+}
+.page_1 .page1_child1 .bottom #cranelegpos_2{
+    top: 732px;
+}
+.page_1 .page1_child1 .bottom #cranelegpos_3{
+    top: 914px;
+}
+.page_1 .page1_child1 .bottom #cranelegpos_4{
+    top: 1096px;
+}
+.page_1 .page1_child1 .bottom #cranelegpos_5{
+    top: 1278px;
+}
+.page_1 .page1_child1 .bottom .concrete{
+    position: absolute;
+    width: 300px;
+    top: 505px;
+}
+.page_1 .page1_child1 .bottom .flip_concrete{
+    position: absolute;
+    width: 300px;
+    top: 575px;
+    transform: scaleY(-1);
+}
+.page_1 .page1_child1 .bottom #pos_1{
+    left: 0px;
+}
+.page_1 .page1_child1 .bottom #pos_2{
+    left: 300px;
+    z-index: 2;
+}
+.page_1 .page1_child1 .bottom #pos_3{
+    left: 600px;
+}
+.page_1 .page1_child1 .bottom #pos_4{
+    left: 900px;
+}
+.page_1 .page1_child1 .bottom #pos_5{
+    left: 1200px;
+}
+.page_1 .page1_child1 .bottom #pos_6{
+    left: 1500px;
+}
+.page_1 .page1_child1 .bottom #pos_7{
+    left: 1800px;
+}
+
+/* child_2 */
+.page_1 .page1_child2{
+    position: relative;
+    /* border: 2px solid navy; */
+    display: flex;
+    justify-content: center;
+}
+.page_1 .page1_child2 #leftbuilding_page1{
+    position: absolute;
+    width: 600px;
+    top: -200px;
+    left: -100px;
+}
+.page_1 .page1_child2 #concreteright_page1{
+    position: absolute;
+    width: 550px;
+    transform: rotateZ(-90deg);
+    bottom: 200px;
+    right: -150px;
+    z-index: 2;
+}
+.page_1 .page1_child2 #taperight_page1{
+    position: absolute;
+    width: 300px;
+    right: 15px;
+    bottom: 30px;
+    z-index: 3;
+}
+.page_1 .page1_child2 #tree_page1{
+    position: absolute;
+    width: 325px;
+    left: 350px;
+    top: 0px;
+    z-index: 2;
+}
+.page_1 .page1_child2 #tape_page1{
+    position: absolute;
+    width: 500px;
+    top: -275px;
+    left: -225px;
+    z-index: 2;
+}
+.page_1 .page1_child2 #brickright_page1{
+    position: absolute;
+    width: 200px;
+    top: 380px;
+    right: -50px;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+.page_1 .page1_child2 #cone_page1{
+    position: absolute;
+    width: 300px;
+    right: 225px;
+    bottom: 0px;
+    z-index: 4;
+}
+.page_1 .page1_child2 #left1_page1{
+    position: absolute;
+    width: 300px;
+    right: 180px;
+    bottom: 20px;
+    z-index: 3;
+}
+.page_1 .page1_child2 #plant1_page1{
+    position: absolute;
+    width: 550px;
+    right: 20px;
+    bottom: -60px;
+    z-index: 4;
+}
+.page_1 .page1_child2 .chat_container{
+    position: relative;
+    /* border: 2px solid red; */
+    width: 500px;
+    height: 400px;
+    top: 500px;
+    /* left: 100px; */
+}
+.page_1 .page1_child2 .chat_container #poschat_1{
+    transform: scaleX(-1);
+    top: 0px;
+    left: 100px;
+}
+.page_1 .page1_child2 .chat_container #poschat_2{
+    top: 100px;
+}
+.page_1 .page1_child2 .chat_container #poschat_3{
+    transform: scaleX(-1);
+    top: 200px;
+    left: 195px;
+}
+.page_1 .page1_child2 .chat_container #poschat_4{
+    top: 300px;
+    left: 20px;
+}
+.page_1 .page1_child2 .chat_container .chat{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page_1 .page1_child2 .chat_container .chat .chat_text{
+    position: absolute;
+    z-index: 2;
+    font-size: 12px;
+}
+/* จบกานต์ */
+
+
+
+/* ต้า */
+.page_2{
+    height: 5900px;
+    background-image: linear-gradient(to bottom, black 70%, hsla(34, 38%, 85%, 1));
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1.58fr 1080px;
+    color: white;
+    /* position: relative; */
+    overflow: hidden;
+}
+.page_2 .page2_child1{
+    /* position: relative; */
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    /* border: 2px solid red; */
+    justify-content: center;
+}
+.page_2 .page2_child1 .page2_top{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15%;
+    /* border: 2px solid blue; */
+}
+.page_2 .page2_child1 .page2_mid{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 24px;
+    /* border: 2px solid blue; */
+}
+.page_2 .page2_child1 .page2_bottom{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 50px;
+    /* border: 2px solid blue; */
+}
+.page_2 .page2_child1 .page2_pic{
+    height: 371px;
+    width: 249px;
+    /* border: 2px solid blue; */
+    /* make image to center */
+    margin-left: auto;
+    margin-right: auto;
+}
+#prison{
+    height: 371px;
+}
+
+.page_2 .page2_child2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* border: 2px solid red; */
+    justify-content: center;
+}
+.page_2 .page2_child2 .page2_center{
+    /* border: 2px solid blue; */
+}
+.page_2 .page2_child2 .page2_left{
+    /* border: 2px solid blue; */
+    margin-top: 450px;
+}
+.page_2 .page2_child2 .page2_right{
+    /* border: 2px solid blue; */
+    margin-top: -160px;
+    margin-right: -100px;
+}
+.page_2 .page2_child2 .page2_center .pic2-1{
+    height: 693px;
+    width: 511px;
+    /* border: 2px solid blue; */
+    /* make image to center */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.page_2 .page2_child2 .page2_left .pic2-2{
+    /* border: 2px solid blue; */
+    rotate: -90deg;
+    transform: scaleY(-1);
+    margin-right: 0;
+}
+.page_2 .page2_child2 .page2_right .pic2-3{
+    /* border: 2px solid blue; */
+    rotate: -90deg;
+}
+#TV{
+    height: 693px;
+}
+#leaf1{
+    height: 460px;
+    width: 265px;
+}
+#leaf2{
+    height: 400px;
+    width: 205px;
+}
+
+.page_2 .page2_child3{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    /* border: 10px solid red; */
+    justify-content: center;
+}
+.page_2 .page2_child3 .pic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    gap: 10%;
+
+}
+.page_2 .page2_child3 .pic .card{
+    /* border: 2px solid blue; */
+    align-self: center;
+    width: 333.16px;
+}
+#card1{
+    width: 333.16px;
+    align-self: center;
+
+}
+#card2{
+    width: 333.16px;
+    align-self: center;
+
+}
+#card3{
+    width: 333.16px;
+    align-self: center;
+
+}
+
+
+.page_2 .page2_child4{
+    display: grid;
+    grid-template-columns: 437px 2fr 437px;
+    grid-template-rows: 3fr 1fr 1fr;
+    /* border: 2px solid red; */
+    justify-content: center;
+}
+.page_2 .page2_child4 .text4-1{
+    font-size: 22px;
+    text-align: center;
+    margin-top: -100px;
+}
+.page_2 .page2_child4 .text4-2{
+    font-size: 36px;
+    text-align: center;
+    color: red;
+}
+.page_2 .page2_child4 .pic4-1{
+    grid-column: 1 / span 2;
+    /* border: 2px solid blue; */
+    height: 927px;
+}
+.page_2 .page2_child4 .pic4-2{
+    /* border: 2px solid blue; */
+    height: 600px;
+    rotate: 90deg;
+    transform: ScaleX(-1);
+    margin-right: -20px;
+}
+#human{
+    height: 927px;
+}
+#leaf3{
+    height: 600px;
+}
+
+.page_2 .page2_child5{
+    position: relative;
+    display: grid;
+    grid-template-columns: 449px 6fr 449px;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* border: 10px solid black; */
+    justify-content: center;
+}
+
+.page_2 .page2_child5 .container-botton{
+    width: 265px;
+    height: 104px;
+    background-color: #373234;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(40%);
+    margin-top: 10%;
+    z-index: 2;
+}
+.page_2 .page2_child5 .container-botton .botton{
+    font-size: 20px;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    margin-top: 9%;
+}
+.page_2 .page2_child5 .pic5-1{
+    position: relative;
+    height: 500px;
+    /* border: 2px solid orange; */
+    margin-left: 328px;
+    z-index: 2;
+}
+.page_2 .page2_child5 .bg{
+    justify-content: center;
+    width: 1920px;
+    z-index: -100;
+    transform: scaleX(-1);
+    grid-column: 1 / span 3;
+    scale: 50%;
+}
+#mud1{
+    position: absolute;
+    width: 800px;
+    z-index: 0;
+    /* transform: scaleX(-1); */
+    transform: rotateZ(10deg);
+    left: -100px;
+    top: 500px;
+}
+#mud2{
+    position: absolute;
+    width: 800px;
+    z-index: 0;
+    transform: scaleX(-1) rotateZ(10deg);
+    top: 500px;
+    left: 625px;
+}
+
+#mud3{
+    position: absolute;
+    width: 800px;
+    z-index: 0;
+    /* transform: scaleX(-1); */
+    transform: rotateZ(10deg);
+    left: 1275px;
+    top: 500px;
+}
+
+
+#pipe{
+    position: absolute;
+    right: 0px;
+    height: 500px;
+}
+/* จบต้า */
