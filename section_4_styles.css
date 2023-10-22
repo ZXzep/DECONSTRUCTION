@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    position: relative;
+}
+.sec4-page1-container{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    
+}
+.sec4-page1-container .page1-header{
+    width: 1100px;
+    height: 650px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+}
+.sec4-page1-container .page1-header .page1-item{
+    position: relative;
+}
+
+.page1-item .chain{
+    position: absolute;
+    height: 500px;
+}
+.page1-item .chain:nth-child(1){
+    left: 10px;
+    top:0;
+}
+.page1-item .chain:nth-child(2){
+    right: 10px;
+    top:0;
+}
+.page1-item-text{
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    background: url(./asset/Section4/3.png);
+    background-size: cover;
+    transform: rotate(calc(var(--rot) * 1deg));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+.page1-item-text label{
+    color:#e8dccc;
+    font-size: 72px;
+    font-weight:600;
+}
+
+.sec4-page2-container{
+    position: relative;
+    width: 100%;
+    height: 4600px;
+    overflow: hidden;
+}
+.sec4-page2-container .page2-box{
+    position: relative;
+    width: 800px;
+    margin:400px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page2-box p{
+    color:white;
+    font-size: 40px;
+}
+.page2-box p label{
+    color:red;
+}
+.page2-box h1{
+    font-size: 72px;
+    color:red;
+    padding: 120px 0;
+}
+.page2-box .penalty-box{
+    width:800px;
+    height:340px;
+    margin:100px 0;
+    background: url(./asset/Section4/3.png);
+    background-size: cover;
+    transform: rotate(5deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.penalty-box img#penalty-chain-left{
+    position: absolute;
+    height: 900px;
+    bottom: 150px;
+    left:-340px;
+    transform: rotate(-50deg);
+}
+.penalty-box img#penalty-chain-right{
+    position: absolute;
+    height: 900px;
+    bottom: 150px;
+    right: -340px;
+    transform: rotate(50deg);
+}
+.page2-box .penalty-box label{
+    font-size: 108px;
+    font-weight: bold;
+    color:white
+}
+.page2-box h3{
+    color:white;
+    font-weight: 500;
+    font-size: 52px;
+}
+.page2-box h3.bt-text{
+    padding:100px 0 50px 0;
+}
+
+.sec4-page2-container .page2-box-paper{
+    position: relative;
+    width: 100%;
+    height:900px;
+    margin: auto;
+}
+.page2-box-paper img#paper-img-left{
+    position: absolute;
+    width: 800px;
+    left:0;
+    transform: rotate(15deg);
+}
+.page2-box-paper img#paper-img-right{
+    position: absolute;
+    width: 500px;
+    right: 0;
+    transform: rotate(-15deg);
+}
+.sec4-page2-container .page2-box-cell{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.page2-box-cell img#prisoner-img-middle{
+    width: 1000px;
+    margin:auto 0 auto 200px;
+}
+.page2-box-cell img#cell-img-left{
+    position: absolute;
+    height: 100%;
+    left:0;
+}
+.page2-box-cell img#cell-img-right{
+    position: absolute;
+    height: 100%;
+    right:0;
+}
+.sec4-page2-container .penalty-container{
+    width: 100%;
+    height: 700px;
+}
+.penalty-container .penalty-box-2{
+    
+}
+.sec4-background{
+    background:linear-gradient(#e8dccc,#e8dccc,black,black,black,rgb(255, 0, 0) ,black,black,black ) ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top:0;
+    z-index: -1;
+}
+.sec4-background img{
+    position: absolute;
+}
+.sec4-background img#crime-scene-rb1{
+    width: 2100px;
+    top:-470px;
+    left:-70px;
+}
+.sec4-background img#left-buiding{
+    width: 1700px;
+    top:600px;
+    left:-980px;
+}
+.sec4-background img#crime-scene-rb2{
+    width: 2000px;
+    top: 800px;
+    left:-0px;
+    transform: rotate(10deg);
+}
+.sec4-background img#crime-scene-rb3{
+    width: 2000px;
+    top: 1600px;
+    left:-0px;
+    transform: rotate(10deg);
+    opacity: .5;
+}
