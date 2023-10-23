@@ -60,6 +60,20 @@
     .page_1 .page1_child1 .bottom #flower_page1{
         width: 174px;
         left: -11px;
+        top: 320px;
+    }
+    .page_1 .page1_child1 .bottom #windmill_page1{
+        width: 172px;
+        left: -11px;
+        top: 270px
+    }
+    .page_1 .page1_child1 .bottom #dust_page1{
+        height: 391px;
+        top: 185px;
+    }
+    .page_1 .page1_child1 .bottom #dust_page1_flip{
+        height: 391px;
+        top: 575px;
     }
 }
 @media (361px <= width < 391px){
