@@ -32,6 +32,7 @@
         width: 335px;
         height: 700px;
         top: -124px;
+        z-index: 3;
     }
     .page_1 .page1_child1 .bottom #building_page1{
         right: -5px;
@@ -53,6 +54,8 @@
         width: 250px;
         transform: scaleY(-1) scaleX(-1);
         /* top: 5px; */
+        top: 490px;
+        z-index: 1;
     }
     .page_1 .page1_child1 .bottom #pos_2{
         left: 250px;
@@ -170,7 +173,113 @@
     .page_1 .page1_child2 .chat_container .chat .bubble{
         width: 184px;
     }
-}
+    .page_2 .page2_child1 .page2_top{
+        position: relative;
+        font-size: 20px;
+        left: -380px;
+    }
+    .page_2 .page2_child1 .page2_mid{
+        position: relative;
+        font-size: 20px;
+        left: -380px;
+    }
+    .page_2 .page2_child1 .page2_bottom{
+        position: relative;
+        font-size: 20px;
+        left: -380px;
+    }
+    .page_2 .page2_child1 .page2_pic {
+        position: relative;
+        left: -340px;
+    }
+    #prison {
+        height: 254px
+    }
+    .page_2 .page2_child2 {
+        grid-template-columns: 97px 194px 97px;
+        position: relative;
+        left: -375px;
+    }
+    .page_2 .page2_child2 .page2_right {
+        margin-top: 30px;
+        margin-right: 60px;
+    }
+    .page_2 .page2_child2 .page2_left .pic2-2 {
+        margin-right: -90px;
+        margin-top: -150px;
+    }
+    #leaf1 {
+        height: 200px;
+        width: 113px;
+    }
+    #TV{
+        height: 300px;
+    }
+    #leaf2 {
+        height: 150px;
+        width: 75px;
+    }
+    .page_2 .page2_child3 {
+        width: 390px;
+    }
+    .page_2 .page2_child3 .pic {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin: auto;
+        padding: 32px;
+    }
+    .page_2 .page2_child3 .pic .card {
+        text-align: center;
+        width: 150px;
+    }
+    
+    #card1 {
+        width: 150px;
+    }
+    #card2 {
+        width: 150px;
+    }
+    #card3 {
+        width: 150px;
+    }
+    #human {
+        height: 350px;
+    }
+    .page_2 .page2_child4 .pic4-2 {
+        position: relative;
+        height: 200px;
+        left: -630px;
+        top: -90px;
+    }
+    #leaf3{
+        height: 200px;
+        position: relative;
+    }
+    .page_2 .page2_child4 .text4-1 {
+        position: relative;
+        left: -385px;
+    }
+    .page_2 .page2_child4 .text4-2 {
+        position: relative;
+        left: -385px;
+        top: 220px;
+        font-size: 28px;
+    }
+    .page_2 .page2_child5 .pic5-1 {
+        margin-left: 0;
+        left: -765px;
+        top: 100px;
+    }
+    .page_2 .page2_child5 .container-botton {
+        position: relative;
+        left: -495px;
+        top: 400px;
+    }
+    .page_2 .page2_child5 .container-botton .botton {
+        margin-top: 15px;
+        position: relative;
+    }
+
 @media (361px <= width < 391px){
 
 }

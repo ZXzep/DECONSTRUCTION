@@ -548,7 +548,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     /* border: 2px solid blue; */
     justify-content: center;
-    gap: 10%;
+    gap: 32px;
 
 }
 .page_2 .page2_child3 .pic .card{
