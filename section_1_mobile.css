@@ -285,12 +285,13 @@
     }
     .page_2 .page2_child5 .container-botton {
         position: relative;
-        left: -495px;
+        left: -390px;
         top: 400px;
     }
     .page_2 .page2_child5 .container-botton .botton {
         margin-top: 15px;
         position: relative;
+        top: 15px;
     }
 
 @media (361px <= width < 391px){
