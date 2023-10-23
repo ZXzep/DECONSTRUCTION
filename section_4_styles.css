@@ -53,6 +53,7 @@ body{
     transform-origin: top;
     bottom: 0;
     z-index: 2;
+    --rot:4;
 }
 .page1-item-text label{
     color:#e8dccc;
@@ -119,6 +120,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 2;
 }
 .page2-box p{
     color:white;
@@ -202,7 +204,7 @@ body{
 }
 .sec4-page2-container .page2-box-cell{
     background-image: url(/asset/Section4/9_new.png);
-    background-size: c;
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
@@ -297,6 +299,7 @@ body{
     z-index: -1;
 }
 .sec4-page2-container .page2-footer{
+    position: relative;
     width: 100%;
     height: fit-content;
     margin-top: 50px;
@@ -304,6 +307,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 2;
     
 }
 .page2-footer .footer-1{
@@ -599,7 +603,7 @@ body{
 }
 .page3-body img#page3-rm-flower{
     width: 200px;
-    top: 60%;
+    top: 62%;
     transform: translateY(-50%) scaleY(-1);
     right: 0;
     z-index: 0;
