@@ -397,6 +397,11 @@
     z-index: 2;
     font-size: 12px;
 }
+.bubble{
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+}
 /* จบกานต์ */
 
 

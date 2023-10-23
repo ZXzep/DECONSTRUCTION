@@ -68,11 +68,11 @@
         top: 270px
     }
     .page_1 .page1_child1 .bottom #dust_page1{
-        height: 391px;
-        top: 185px;
+        height: 230px;
+        top: 346px;
     }
     .page_1 .page1_child1 .bottom #dust_page1_flip{
-        height: 391px;
+        height: 230px;
         top: 575px;
     }
     .page_1 .page1_child1 .bottom #tree_page1{
@@ -114,6 +114,61 @@
         top: 209px;
         left: 123px;
         z-index: 0;
+    }
+    .page_1 .page1_child1 .bottom .craneleg {
+        right: 27px;
+        width: 55px;
+    }
+    .page_1 .page1_child1 .bottom #cranelegpos_1 {
+        top: 574px;
+    }
+    .page_1 .page1_child1 .bottom #cranelegpos_2 {
+        top: 787px;
+    }
+    .page_1 .page1_child1 .bottom #cranelegpos_3 {
+        top: 1000px;
+    }
+    .page_1 .page1_child1 .bottom #cranelegpos_4 {
+        top: 1213px;
+    }
+    .page_1 .page1_child2 #cone_page1{
+        width: 172px;
+        top: 485px;
+        right: 189px;
+    }
+    .page_1 .page1_child2 #left1_page1{
+        width: 149px;
+        top: 414px;
+        right: 176px;
+    }
+    .page_1 .page1_child2 #taperight_page1{
+        width: 173px;
+        right: 68px;
+        top: 469px;
+    }
+    .page_1 .page1_child2 .chat_container {
+        width: 300px;
+        top: 650px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .page_1 .page1_child2 .chat_container #poschat_1{
+        left: 40px;
+    }
+    .page_1 .page1_child2 .chat_container #poschat_2{
+        left: -25px;
+    }
+    .page_1 .page1_child2 .chat_container #poschat_3{
+        left: 70px;
+    }
+    .page_1 .page1_child2 .chat_container #poschat_4{
+        left: 5px;
+    }
+    .page_1 .page1_child2 .chat_container .chat .chat_text{
+        font-size: 8px;
+    }
+    .page_1 .page1_child2 .chat_container .chat .bubble{
+        width: 184px;
     }
 }
 @media (361px <= width < 391px){
