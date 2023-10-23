@@ -75,6 +75,46 @@
         height: 391px;
         top: 575px;
     }
+    .page_1 .page1_child1 .bottom #tree_page1{
+        display: block;
+        width: 157px;
+        top: 572px;
+        z-index: 5;
+    }
+    .page_1 .page1_child2 #leftbuilding_page1 {
+        width: 180px;
+        left: -29px;
+        top: -25px;
+    }
+    .page_1 .page1_child2 #tape_page1{
+        width: 195px;
+        left: -104px;
+        top: -52px;
+    }
+    .page_1 .page1_child2 #tree_page1{
+        width: 85px;
+        left: 81px;
+        top: 59px;
+        transform: rotate(5deg);
+    }
+    .page_1 .page1_child2 #brickright_page1{
+        width: 124px;
+        left: 268px;
+        top: 195px;
+        transform: scaleX(1);
+        z-index: 5;
+    }
+    .page_1 .page1_child2 #concreteright_page1 {
+        width: 229px;
+        left: 216px;
+        top: 305px;
+    }
+    .page_1 .page1_child2 #plant1_page1 {
+        width: 244px;
+        top: 209px;
+        left: 123px;
+        z-index: 0;
+    }
 }
 @media (361px <= width < 391px){
 

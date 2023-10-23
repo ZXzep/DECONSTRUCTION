@@ -73,6 +73,10 @@
     top: 170px;
     z-index: 1;
 }
+.page_1 .page1_child1 .bottom #tree_page1{
+    position: absolute;
+    display: none;
+}
 .page_1 .page1_child1 .bottom #dust_page1{
     position: absolute;
     width: 100%;
