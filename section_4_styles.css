@@ -370,6 +370,8 @@ body{
     bottom: 200px;
     left:100px;
     z-index: 2;
+    transform-origin: left;
+    animation: windy 4s linear infinite alternate;
 }
 
 
@@ -465,11 +467,15 @@ body{
     width: 300px;
     left: 0;
     bottom: 260px;
+    transform-origin: left bottom;
+    animation: windy 3s alternate infinite linear;
 }
 .page3-header img#page3-header-r-flower{
     width: 300px;
     right: 0;
     bottom: 100px;
+    transform-origin: right bottom;
+    animation: windy 2s alternate infinite linear;
 }
 
 .page3-header #page3-header-tree{
@@ -634,7 +640,10 @@ body{
     z-index: 0;
 }
 
-
+@keyframes windy{
+    0%{transform: rotate(-2deg);}
+    100%{transform: rotate(2deg);}
+}
 /* scroll text */
 /* #text-l{
     position: relative;
