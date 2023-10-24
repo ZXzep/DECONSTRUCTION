@@ -246,21 +246,21 @@
     transform: rotateZ(-90deg);
     bottom: 200px;
     right: -150px;
-    z-index: 2;
+    z-index: 5;
 }
 .page_1 .page1_child2 #taperight_page1{
     position: absolute;
     width: 300px;
     right: 15px;
     bottom: 30px;
-    z-index: 3;
+    z-index: 8;
 }
 .page_1 .page1_child2 #tree_page1{
     position: absolute;
     width: 325px;
     left: 350px;
     top: 0px;
-    z-index: 2;
+    z-index: 7;
     transform: translateX(-800px);
 }
 .page_1 .page1_child2 #tape_page1{
@@ -268,7 +268,7 @@
     width: 500px;
     top: -275px;
     left: -225px;
-    z-index: 2;
+    z-index: 7;
     transform: translateX(-500px);
 }
 
@@ -296,21 +296,21 @@
     top: 380px;
     right: -50px;
     transform: scaleX(-1);
-    z-index: 1;
+    z-index: 6;
 }
 .page_1 .page1_child2 #cone_page1{
     position: absolute;
     width: 300px;
     right: 225px;
     bottom: 0px;
-    z-index: 6;
+    z-index: 11;
 }
 .page_1 .page1_child2 #left1_page1{
     position: absolute;
     width: 300px;
     right: 180px;
     bottom: 20px;
-    z-index: 5;
+    z-index: 10;
     transform-origin: 220px 182.98px 0;
     animation: leaf_page1 cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 2s;
 }
@@ -319,7 +319,7 @@
     width: 550px;
     right: 20px;
     bottom: -60px;
-    z-index: 4;
+    z-index: 9;
     animation: plant_page1 cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 3s;
 }
 
