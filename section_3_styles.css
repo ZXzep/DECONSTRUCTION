@@ -646,3 +646,6 @@ input.checkbox-input {
   .page3{
     display:none;
   }
+  a{
+    text-decoration: none;
+  }
