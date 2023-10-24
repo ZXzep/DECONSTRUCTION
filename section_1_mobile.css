@@ -293,7 +293,17 @@
         position: relative;
         top: 15px;
     }
-
+    #text1_page2{
+        left: 155px;
+        top: 754px;
+    }
+    #text2_page2{
+        left: 47px;
+        top: 894px;
+    }
+    .text_page2{
+        font-size: 15px;
+    }
 @media (361px <= width < 391px){
 
 }

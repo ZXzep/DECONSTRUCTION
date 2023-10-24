@@ -462,6 +462,21 @@
 #prisonText{
     transition: .5s linear .3s;
 }
+#text1_page2{
+    position: relative;
+    top: 790px;
+    left: 1094px;
+    z-index: 5;
+}
+#text2_page2{
+    position: relative;
+    top: 881px;
+    left: 451px;
+    z-index: 5;
+}
+.text_page2{
+    font-size: 30px;
+}
 
 @keyframes prison {
     0%{transform: translateX(-5px);}
